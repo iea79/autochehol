@@ -1,0 +1,16 @@
+// begin product 
+.product
+	.grid(class="grid__"+col+"")
+		- for (var i = 0; i < plate; i++) {
+			div
+				.product__item
+					.product__img
+						img(src="img/ptoduct.jpg", alt="")
+					.product__text Накидки на сиденья из натуральной шерсти белые
+					.product__action
+						.product__price 4500 
+							span.rub ₽
+						.product__btn
+							button.btn Купить
+		-};
+// end product 

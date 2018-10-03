@@ -1,0 +1,63 @@
+// Style for button and pseudo button for input and link
+.btn {
+	color: #ec3438;
+	font-family: $main_font_family;
+	font-size: 16px;
+	font-weight: 900;
+	text-transform: uppercase;
+	padding: 9px 15px;
+	border: 2px solid #ec3438;
+	outline: none;
+	text-decoration: none;
+	display: inline-block;
+	background-color: #fff;
+	text-align: center;
+	max-width: 100%;
+	cursor: pointer;
+	border-radius: 0;
+	transition: all 0.3s;
+	text-decoration: none;
+	letter-spacing: 0.2em;
+	&:hover {
+		background-color: #ec3438;
+		border-color: #ec3438;
+		color: #ffffff;
+		text-decoration: none;
+	}
+	&:focus,&:active {
+		background-color: darken(#ec3438, 4%);
+		border-color: darken(#ec3438, 4%);
+		color: #ffffff;
+	}
+	// @each $status_el, $color_bg in $el_colors {
+	// 	&_#{$status_el} {
+	// 		background-color: $color_bg;
+	// 		border-color: $color_bg;
+	// 		color: $btn_contrast_text_color;
+	// 		&:hover {
+	// 			background-color: darken($color_bg, 7%);
+	// 			color: $btn_contrast_text_color;
+	// 		}
+	// 		&:focus,&:active {
+	// 			background-color: darken($color_bg, 10%);
+	// 			color: $btn_contrast_text_color;
+	// 		}
+	// 	}
+	// }
+	&_contrast {
+		background-color: #ec3438;
+		border-color: #ec3438;
+		color: #fff;
+		&:hover {
+			background-color: lighten(#ec3438, 5%);
+			border-color: lighten(#ec3438, 5%);
+		}
+		&:focus,&:active {
+			background-color: darken(#ec3438, 10%);
+			border-color: darken(#ec3438, 10%);
+		}
+	}
+	@media (max-width: 767px) {
+	    border-width: 1px;
+	}
+}

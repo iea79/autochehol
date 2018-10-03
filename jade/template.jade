@@ -1,0 +1,23 @@
+block variables
+	//- Переменная для добавления класса к body
+	-var pageClass = "";
+
+<!DOCTYPE html>
+html(lang="en")
+	
+	include paritals/head.jade
+
+	body(class=pageClass)
+		.wrapper
+			
+			include paritals/header.jade
+
+			// begin main__content
+			main.main__content
+				block content
+
+			// end main__content 
+
+		include paritals/footer.jade
+
+		include paritals/scripts.jade

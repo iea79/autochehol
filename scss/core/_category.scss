@@ -1,0 +1,149 @@
+.category {
+	margin-bottom: 30px;
+	&__grid {
+		max-width: 1359px;
+		@media (max-width: 1199px) {
+		    > div {
+		    	margin-bottom: 18px;
+		    }
+		}
+	}
+	&__wrap {
+		width: 100%;
+		@extend %clear_a;
+		@media (min-width: 768px) {
+		    
+		}
+		@media (min-width: 992px) {
+			letter-spacing: -1px;
+			font-size: 0;
+			width: 50%;
+		    
+		}
+		@media (min-width: 1200px) {
+		    
+		}
+
+		&_sm {
+			.category {
+				&__img {
+					width: 38px;
+					vertical-align: top;
+					// font-size: 8px;
+					img {
+						width: 29px;
+					}
+				}
+				&__name {
+					// font-size: 9px;
+				}
+				&__item {
+					display: inline-table;
+					margin-bottom: 1px;
+					&:nth-child(odd) {
+						width: 51%;
+						
+					}
+					&:nth-child(even) {
+						width: 49%;
+						
+					}
+				}
+				@media (min-width: 992px) {
+					&__img {
+						width: 62px;
+						img {
+							width: 42px;
+						}
+					}
+					&__item {
+						margin-bottom: 12px;
+						&:nth-child(odd) {
+							width: 48%;
+							
+						}
+						&:nth-child(even) {
+							width: 52%;
+							
+						}
+					}
+				}
+				@media (max-width: 991px) {
+					&__name {
+						font-size: 9px;
+					}
+				}
+			}
+		}
+	}
+	&__item {
+		// width: 50%;
+		font-size: 18px;
+		letter-spacing: 0.1em;
+		color: #5d5d5d;
+		margin-bottom: 8px;
+		text-decoration: none;
+		display: table;
+		vertical-align: top;
+		table-layout: fixed;
+		width: 100%;
+		@media (min-width: 992px) {
+			margin-bottom: 12px;
+			display: inline-table;
+			&:nth-child(odd) {
+				width: 57%;
+				
+			}
+			&:nth-child(even) {
+				width: 43%;
+				
+			}
+			&:first-child {
+			}
+		}
+		
+	}
+	&__img {
+		display: table-cell;
+		vertical-align: middle;
+		width: 65px;
+		img {
+			width: 52px;
+			border-radius: 50%;
+		}
+		@media (min-width: 768px) {
+		}
+		@media (min-width: 992px) {
+			width: 100px;
+			img {
+				width: 70px;
+				
+			}		    
+		    
+		}
+		@media (min-width: 1200px) {
+		    
+		}
+	}
+	&__name {
+		// padding-left: 20px;
+		display: table-cell;
+		vertical-align: middle;
+		span {
+			display: inline-block;
+			padding: 7px 0;
+			border-bottom: 1px solid transparent;
+		}
+		&:hover {
+			span {
+				border-bottom-color: rgba(#5d5d5d, .5);
+			}
+		}
+		@media (min-width: 992px) {
+			padding-right: 20px;
+		}
+		@media (max-width: 991px) {
+		    font-size: 12px;
+		}
+	}
+}

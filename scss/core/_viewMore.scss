@@ -1,0 +1,25 @@
+.viewMore {
+	margin-bottom: 99px;
+	&__link {
+		color: #1d1d1d;
+		font-weight: 600;
+		font-size: 16px;
+		padding: 10px 0 13px;
+		letter-spacing: 0.22em;
+		text-transform: uppercase;
+		border-bottom: 1px solid rgba(#5d5d5d, .5);
+		text-decoration: none;
+		&:hover {
+			border-bottom-color: #ec3438;
+    		color: #ec3438;
+		}
+	}
+	@media (max-width: 767px) {
+		margin-bottom: 70px;
+	    &__link {
+	    	font-size: 10px;
+	    	&:hover {
+	    	}
+	    }
+	}
+}

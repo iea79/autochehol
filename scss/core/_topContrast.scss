@@ -1,0 +1,29 @@
+.topContrast {
+	padding: 9.5% 0 8.6%;
+	margin-bottom: 88px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	&__title {
+		font-size: 79px;
+		line-height: 1;
+		font-weight: 900;
+		color: #fff;
+		max-width: 81%;
+	}
+	@media (max-width: 991px) {
+	    &__title {
+			font-size: 50px;
+	    }
+	}
+	@media (max-width: 991px) {
+		padding: 76px 0 72px;
+		margin-bottom: 52px;
+	    &__title {
+			font-size: 29px;
+			line-height: 1.2;
+			max-width: none;
+			
+	    }
+	}
+}

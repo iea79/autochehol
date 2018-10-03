@@ -1,0 +1,10 @@
+%link {
+	color: #5d5d5d;
+	letter-spacing: 1.5px;
+	text-decoration: none;
+	padding: 8px 0;
+	border-bottom: 1px solid transparent;
+	&:hover {
+		border-bottom-color: rgba(#5d5d5d, .5);
+	}
+}

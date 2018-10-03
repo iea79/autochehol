@@ -1,0 +1,31 @@
+// Social link
+.soc {
+	// float: left;
+	// display: inline-block;
+	vertical-align: middle;
+	a {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 19px;
+		margin: 0 7px;
+		@media (min-width: 768px) {
+			margin: 0 5px;
+		}
+		@media (min-width: 992px) {
+			font-size: 22px;
+		}
+		@media (min-width: 1200px) {
+			margin: 0 7px;
+			font-size: 29px;
+		}
+		@include trs(0.3s);
+		&:hover {
+			opacity: .8;
+		}
+	}
+	&__label {
+		font-size: 19px;
+		margin-bottom: 26px;
+		padding-left: 10px;
+	}
+}

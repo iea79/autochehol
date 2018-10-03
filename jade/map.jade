@@ -1,0 +1,49 @@
+extends template.jade
+
+block variables
+	-var pageClass = "";
+
+block title
+	title Гарантии
+
+block content
+	.container_center
+		a.backLink(href="shop.html") Смотреть каталог
+
+		h2.title.title__line Автомобильные меховые накидки <br>из овчины на сиденья в Архангельске
+		- var plate = 4;
+		- var col = 4;
+		include block/product.jade
+
+		.viewMore
+			a.viewMore__link(href="#") Смотреть еще
+
+
+		h2.title.title__line Адреса пунктов выдачи в Архангельске
+
+		.deliveryGrid
+			.deliveryGrid__item
+				img(src="img/pochta_rossii.png", alt="" width="99")
+			.deliveryGrid__item
+				img(src="img/boxberry.png", alt="" width="87")
+			.deliveryGrid__item
+				img(src="img/iml.png", alt="" width="96")
+			.deliveryGrid__item
+				img(src="img/pickpoint.png", alt="" width="113")
+			.deliveryGrid__item
+				img(src="img/shiptor.png", alt="" width="107")
+			.deliveryGrid__item
+				img(src="img/dpd.png", alt="" width="103")
+			.deliveryGrid__item
+				img(src="img/cdek.png", alt="" width="106")
+		
+		.deliveryGrid__action
+			a.deliveryComp__link(href="#") Рассчитать доставку
+			a.deliveryComp__link(href="#") Где забрать
+
+		.typoText
+			h4 Где купить меховую накидку из овчины в Москве
+
+			p Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст.
+
+			p Текст текст текст текст текст текст текст текст текст текст текст текст. Текст текст текст текст текст текст текст текст текст текст текст.

@@ -1,0 +1,105 @@
+extends template.jade
+
+block variables
+	-var pageClass = "";
+	-var headerContrast = true;
+
+block title
+	title Home
+
+block content
+	// begin topSlider 
+	.topSlider__wrap
+		.topSlider
+			- var slide = 4;
+			-for (var i = 0; i < slide; i++) {
+				.topSlider__item(style="background-image: url('img/f-slide.jpg')")
+					.topSlider__content
+						.topSlider__title Модельные чехлы на Toyota Camry XV 70 2018
+						.topSlider__sub Индивидуальный пошив за 7 дней, от 6500 рублей за комплект.
+						.topSlider__action
+							button.btn.btn_contrast купить со скидкой 10%	
+			-};
+		.topSlider_thumbs
+			-for (var i = 0; i < slide; i++) {
+				.topSlider__item
+					img(src="img/f-slide-sm"+i+".jpg", alt="")
+			-};
+	// end topSlider 
+
+	.container_center
+
+		h2.title.title__line Модельные чехлы из экокожи
+		- var plate = 3;
+		- var col = 3;
+		include block/product.jade
+
+		h2.title.title__line Недорогие модельные чехлы комбинированные
+
+		include block/product.jade
+
+		h2.title.title__line Как заказать
+
+		.howOrder
+			.howOrder__grid.grid
+				.howOrder__item
+					.howOrder__img
+						img(src="img/zayavka_online.svg", alt="")
+					.howOrder__text Сделайте заявку на сайте или по другим контактам
+				.howOrder__item
+					.howOrder__img
+						img(src="img/soglasovanie.svg", alt="")
+					.howOrder__text С Вами согласуют удобный Вам вариант доставки
+				.howOrder__item
+					.howOrder__img
+						img(src="img/otpracka.svg", alt="")
+					.howOrder__text Отправка на следующий день
+				.howOrder__item
+					.howOrder__img
+						img(src="img/sms_o_dostavke.svg", alt="")
+					.howOrder__text Получаете СМС о приходе товара и забираете заказ
+
+		include block/delivery.jade
+
+		h2.title.title__line Профессиональная установка чехлов Ауди А4
+		.install.grid
+			.install__item
+				.install__img
+					img(src="img/install_1.svg", alt="")
+				.install__name Установка в нашем установочном центре в Москве
+				.install__adress ул. Южнопортовая д.15 стр. 1
+				.install__price
+					b 1000 
+					|p
+			.install__item
+				.install__img
+					img(src="img/install_2.svg", alt="")
+				.install__name Установка с выездом по Москве
+				.install__price
+					b 2000 
+					|p
+			.install__item
+				.install__img
+					img(src="img/install_3.svg", alt="")
+				.install__name Установка с подшивкой чехлов к сиденьям
+				.install__adress ул. Южнопортовая д.15 стр. 1
+				.install__price
+					b 3500 
+					|p
+			.install__item
+				.install__img
+					img(src="img/install_4.svg", alt="")
+				.install__name Установка с подшивкой чехлов к сиденьям с выездом
+				.install__price
+					b 4000 
+					|p
+
+		h2.title.title__line Вы смотрели
+		- var plate = 4;
+		- var col = 4;
+		include block/product.jade
+	
+		.viewMore
+			a.viewMore__link(href="#") Смотреть еще
+
+		include block/aboutFur.jade

@@ -1,0 +1,169 @@
+extends template.jade
+
+block variables
+	-var pageClass = "";
+
+block title
+	title Накидки из овчины на сиденья, белые
+
+block content
+	.container_center
+		a.backLink(href="shop.html") Смотреть каталог
+		
+		.title.title__page География поставок
+		.title.titleSub Алфавитный список основных городов где можно приобрести нашу продукцию
+		
+		// begin alfabetList 
+		.alfabetList
+			.alfabetList__item
+				.alfabetList__letter A
+				ul.alfabetList__wrap
+					li
+						a.alfabetList__link(href="#") Архангельск
+					li
+						a.alfabetList__link(href="#") Апатиты
+					li
+						a.alfabetList__link(href="#") Астрахань
+					li
+						a.alfabetList__link(href="#") Архангельск
+					li
+						a.alfabetList__link(href="#") Апатиты
+				ul.alfabetList__wrap
+					li
+						a.alfabetList__link(href="#") Архангельск
+					li
+						a.alfabetList__link(href="#") Апатиты
+					li
+						a.alfabetList__link(href="#") Астрахань
+
+			.alfabetList__item
+				.alfabetList__letter В
+				ul.alfabetList__wrap
+					li
+						a.alfabetList__link(href="#") Великий Новгород
+					li
+						a.alfabetList__link(href="#") Воронеж
+					li
+						a.alfabetList__link(href="#") Волгоград
+					li
+						a.alfabetList__link(href="#") Волгодонск
+
+			.alfabetList__item
+				.alfabetList__letter Е
+				ul.alfabetList__wrap
+					li
+						a.alfabetList__link(href="#") Екатеринбург
+					li
+						a.alfabetList__link(href="#") Елец 
+					li
+						a.alfabetList__link(href="#") Ессентуки
+
+			.alfabetList__item
+				.alfabetList__letter И
+				ul.alfabetList__wrap
+					li
+						a.alfabetList__link(href="#") Иваново
+					li
+						a.alfabetList__link(href="#") Ижевск 
+					li
+						a.alfabetList__link(href="#") Иркутск
+
+			.alfabetList__item
+				.alfabetList__letter К
+				ul.alfabetList__wrap
+					li
+						a.alfabetList__link(href="#") Казань 
+					li
+						a.alfabetList__link(href="#") Калининград 
+					li
+						a.alfabetList__link(href="#") Калуга 
+					li
+						a.alfabetList__link(href="#") Камышин 
+					li
+						a.alfabetList__link(href="#") Кемерово
+				ul.alfabetList__wrap
+					li
+						a.alfabetList__link(href="#") Киров 
+					li
+						a.alfabetList__link(href="#") Кисловодск 
+					li
+						a.alfabetList__link(href="#") Ковров
+			.alfabetList__item
+				.alfabetList__letter Л
+				ul.alfabetList__wrap
+					li
+						a.alfabetList__link(href="#") Липецк
+			.alfabetList__item
+				.alfabetList__letter М
+				ul.alfabetList__wrap
+					li
+						a.alfabetList__link(href="#") Москва 
+					li
+						a.alfabetList__link(href="#") Мурманск 
+					li
+						a.alfabetList__link(href="#") Муром 
+					li
+						a.alfabetList__link(href="#") Мытищи
+
+			.alfabetList__item
+				.alfabetList__letter Н
+				ul.alfabetList__wrap
+					li
+						a.alfabetList__link(href="#") Набережные Челны 
+					li
+						a.alfabetList__link(href="#") Назрань 
+					li
+						a.alfabetList__link(href="#") Нальчик 
+					li
+						a.alfabetList__link(href="#") Находка 
+					li
+						a.alfabetList__link(href="#") Нефтекамск
+			.alfabetList__item
+				.alfabetList__letter П
+				ul.alfabetList__wrap
+					li
+						a.alfabetList__link(href="#") Пенза 
+					li
+						a.alfabetList__link(href="#") Пермь 
+					li
+						a.alfabetList__link(href="#") Петрозаводск
+			.alfabetList__item
+				.alfabetList__letter Р
+				ul.alfabetList__wrap
+					li
+						a.alfabetList__link(href="#") Ростов-на-Дону 
+					li
+						a.alfabetList__link(href="#") Рыбинск
+
+		// end alfabetList 
+
+		.viewMore
+			a.viewMore__link(href="#") Показать все города
+
+
+		.deliveryGrid
+			.deliveryGrid__item
+				img(src="img/pochta_rossii.png", alt="" width="99")
+			.deliveryGrid__item
+				img(src="img/boxberry.png", alt="" width="87")
+			.deliveryGrid__item
+				img(src="img/iml.png", alt="" width="96")
+			.deliveryGrid__item
+				img(src="img/pickpoint.png", alt="" width="113")
+			.deliveryGrid__item
+				img(src="img/shiptor.png", alt="" width="107")
+			.deliveryGrid__item
+				img(src="img/dpd.png", alt="" width="103")
+			.deliveryGrid__item
+				img(src="img/cdek.png", alt="" width="106")
+
+		.deliveryGrid__action
+			a.deliveryComp__link(href="#") Рассчитать доставку
+			a.deliveryComp__link(href="#") Где забрать
+
+
+		h2.title.title__line Вы смотрели
+		- var plate = 4;
+		- var col = 4;
+		include block/product.jade
+

@@ -1,0 +1,57 @@
+mixin header
+	.container_center
+		
+		.header__left
+			a(href="/").logo
+		
+		// begin .header__action 
+		.header__action
+			a.phone(href="tel:") +7 916 997-67-32
+			.soc
+				a(href="#").soc__item 
+					i.icon-whatsapp
+				a(href="#").soc__item 
+					i.icon-viber
+				a(href="#").soc__item 
+					i.icon-telegram
+			.cart
+				.cart__left
+					i.icon-cart
+					.cart__count 2
+				.cart__right оформить заказ
+
+		// end .header__action 
+
+		// begin.header__center 
+		.header__center
+			
+			// begin navbar 
+			ul.navbar
+				li.navbar__item
+					a(href="#").navbar__link
+						i.icon-cargo 
+						|Отправка на следующий день
+				li.navbar__item
+					a(href="#").navbar__link
+						i.icon-coin-ru 
+						|Цены производителя
+				li.navbar__item
+					a(href="#").navbar__link
+						i.icon-like 
+						|100% гарантия качества
+
+			// end navbar 
+
+		// end.header__center 
+
+// end header 
+
+-if (headerContrast) {
+// begin header 
+header.header.header_contrast
+	+header
+-} else {
+// begin header 
+header.header
+	+header
+-};

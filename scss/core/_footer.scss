@@ -1,0 +1,176 @@
+/* Footer
+ ----------------------------------------------------------------------------- */
+.footer {
+	font-size: $main_font_size;
+	position: relative;
+	min-height: $footer_height;
+	padding-top: 62px;
+	padding-bottom: 60px;
+	@extend %clear_all;
+	.container_center {
+		max-width: 1595px;
+		padding-right: 187px;
+	}
+	&__top {
+		margin-bottom: 65px;
+	}
+	&__bottom {
+		@extend %clear_a;
+		margin-bottom: 59px;
+	}
+	&__left {
+		float: left;
+		margin-right: 16.9%;
+		.soc {
+			&__item {
+				margin: 0 14px 0 0;
+				font-size: 33px;
+				.icon-whatsapp {
+					color: #4da735;
+				}
+				.icon-viber {
+					color: #834995;
+				}
+				.icon-telegram {
+					color: #2da5e1;
+				}
+			}
+		}
+	}
+	&__right {
+		float: right;
+		padding-top: 4px;
+		.soc {
+			&__item {
+				margin-right: 15px;
+			}
+		}
+	}
+	&__center {
+		overflow: hidden;
+		padding-top: 2px;
+		.navbar {
+			@extend %clear_a;
+			&__item {
+				float: left;
+				width: 50%;
+				display: block;
+				padding-right: 20px;
+				margin-bottom: 15px;
+				margin-right: 0;
+			}
+			&__link {
+				font-size: 18px;
+				padding: 0 0 8px;
+				display: inline-block;
+				border-bottom: 1px solid transparent;
+				&:hover {
+					text-decoration: none;
+					border-bottom-color: rgba(#5d5d5d, .5)
+				}
+			}
+		}
+	}
+	&__copy {
+		color: rgba(#5d5d5d, .48);
+		font-size: 14px;
+		letter-spacing: 1.5px;
+		// @extend %clear_a;
+		.icon-creayoulogo {
+			float: right;
+			font-size: 30px;
+			color: #ec3438;
+			text-decoration: none;
+			margin-right: 30px;
+			margin-top: -4px;
+			animation: 3s linear 0s normal none infinite running rot;
+		}
+	}
+
+	.adress {
+		margin-bottom: 22px;
+	}
+	@media (max-width: 1199px) {
+		.container_center {
+			padding-right: 0;
+		}
+	    &__left {
+	    	margin-right: 50px;
+	    }
+	}
+	@media (max-width: 991px) {
+	    &__center {
+	    	.navbar {
+	    		&__item {
+	    			margin-bottom: 10px;
+	    		}
+	    		&__link {
+	    			font-size: 14px;
+	    		}
+	    	}
+	    }
+	}
+	@media (max-width: 767px) {
+		padding-top: 2px;
+		min-height: auto;
+		&__top {
+			margin-bottom: 20px;
+		}
+		.logo {
+			width: 98px;
+		}
+		&__right {
+			.soc {
+				display: none;
+				&__label {
+					display: none;
+					
+				}
+			}
+		}
+		&__left {
+			.soc {
+
+				&__item {
+					font-size: 28px;
+				}
+			}
+		}
+		&__copy {
+			font-size: 8px;
+			color: rgba(#5d5d5d, 1);
+			letter-spacing: 0.08em;
+			.icon-creayoulogo {
+				font-size: 22px;
+				margin-top: -9px;
+				margin-right: 34px;
+			}
+		}
+		&__bottom {
+			margin-bottom: 32px;
+		}
+	    &__center {
+	    	margin-bottom: 23px;
+	    	.navbar {
+	    		&__item {
+	    			margin-bottom: 5px;
+	    		}
+	    		&__link {
+	    			font-size: 12px;
+	    		}
+	    	}
+	    }
+	    .adress {
+	    	margin-bottom: 28px;
+	    }
+	}
+}
+
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

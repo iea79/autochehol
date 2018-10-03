@@ -1,0 +1,37 @@
+.adress {
+	font-size: 19px;
+	margin-bottom: 37px;
+	&__item {
+		margin-bottom: 15px;
+		[class*="icon-"] {
+			margin-right: 21px;
+			width: 26px;
+			text-align: center;
+			margin-left: -4px;
+		}
+	}
+	&__link {
+		color: #1d1d1d;
+		letter-spacing: 1.5px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 22px;
+	}
+	@media (max-width: 991px) {
+	    // font-size: 16px;
+	}
+	@media (max-width: 991px) {
+	    font-size: 13px;
+	    // margin-bottom: 42px;
+	    &__item {
+	    	margin-bottom: 3px;
+	    	[class*="icon-"] {
+	    		width: 4px;
+	    	}
+	    }
+	    &__link {
+	    	font-size: 10px;
+	    	font-weight: 600;
+	    }
+	}
+}

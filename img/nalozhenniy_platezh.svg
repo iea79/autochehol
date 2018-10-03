@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Icon_Set" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="133.029px" height="105.531px" viewBox="0 0 133.029 105.531" enable-background="new 0 0 133.029 105.531"
+	 xml:space="preserve">
+<g>
+	<circle fill="none" stroke="#ec3438" stroke-width="3" stroke-miterlimit="10" cx="52.676" cy="45.751" r="21.588"/>
+	<polyline fill="none" stroke="#ec3438" stroke-width="3" stroke-miterlimit="10" points="76.174,75.072 1.5,75.072 1.5,16.429 
+		103.852,16.429 103.852,38.286 	"/>
+	<circle fill="none" stroke="#ec3438" stroke-width="3" stroke-miterlimit="10" cx="17.849" cy="47.208" r="1.092"/>
+	<polyline fill="none" stroke="#ec3438" stroke-width="3" stroke-miterlimit="10" points="10.62,16.43 10.62,8.183 94.731,8.183 
+		94.731,16.43 	"/>
+	<polyline fill="none" stroke="#ec3438" stroke-width="3" stroke-miterlimit="10" points="17.661,8.183 17.661,1.5 87.69,1.5 
+		87.69,8.183 	"/>
+	
+		<rect x="76.174" y="64.908" fill="none" stroke="#ec3438" stroke-width="3" stroke-miterlimit="10" width="55.355" height="39.123"/>
+	<path fill="none" stroke="#ec3438" stroke-width="3" stroke-miterlimit="10" d="M103.852,38.286L103.852,38.286
+		c-11.896,0-21.539,9.643-21.539,21.539v5.083h43.077v-5.083C125.39,47.929,115.747,38.286,103.852,38.286z"/>
+	<path fill="none" stroke="#ec3438" stroke-width="3" stroke-miterlimit="10" d="M110.282,80.284c0-3.551-2.879-6.43-6.431-6.43
+		s-6.431,2.879-6.431,6.43c0,2.589,1.533,4.814,3.738,5.834v8.968h5.384v-8.968C108.748,85.098,110.282,82.873,110.282,80.284z"/>
+</g>
+<text transform="matrix(1 0 0 1 43.4121 56.5825)" fill="#ec3438" font-family="'Gilroy-Regular'" font-size="33.1785">₽</text>
+</svg>

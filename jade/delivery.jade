@@ -1,0 +1,160 @@
+extends template.jade
+
+block variables
+	-var pageClass = "";
+
+block title
+	title Доставка
+
+block content
+	.container_center
+		a.backLink(href="shop.html") Смотреть каталог
+		.payment__title.payment__title_delivery Доставка
+
+		.couriers
+			.mini_title Мы работаем со следющими транспортными компаниями:
+			.couriers__body
+				.couriers__img
+					img(src="img/pochta_rossii_lg.png", alt="image")
+				.couriers__img
+					img(src="img/boxberry_lg.png", alt="image")
+				.couriers__img
+					img(src="img/iml_lg.png", alt="image")
+				.couriers__img
+					img(src="img/pickpoint_lg.png", alt="image")
+				.couriers__img
+					img(src="img/shiptor_lg.png", alt="image")
+				.couriers__img
+					img(src="img/dpd_lg.png", alt="image")
+				.couriers__img
+					img(src="img/cdek_lg.png", alt="image")
+			p.couriers__text Доставка по Москве осуществляется на следующий день, стоимость доставки от 270 р.
+			p.couriers__text Доставка в пунты выдачи по Москве от 100 р.
+			p.couriers__text.couriers__text_detailed Более подробную информацию Вы можете уточнить по телефону или при оформлении заказа.
+		
+		.mini_title.mini_title_calc Калькулятор стоимости и сроков доставки на примере 2-х накидок на сиденья из шерсти:
+		form(action="#").calc
+			.calc__left
+				.calc__text Населенный пункт:
+				select.calc__select 
+					option(value="0") Москва
+					option(value="1") Санкт-Петербург
+			.calc__right
+				.calc__text Способ доставки:
+				.calc__item
+					input#calc-1(type="radio", name="calc" checked).calc__input
+					label(for="calc-1").calc__circle
+					label(for="calc-1").calc__label Курьером до двери
+				.calc__item
+					input#calc-2(type="radio", name="calc").calc__input
+					label(for="calc-2").calc__circle
+					label(for="calc-2").calc__label Пункт выдачи заказов
+				.calc__item
+					input#calc-3(type="radio", name="calc").calc__input
+					label(for="calc-3").calc__circle
+					label(for="calc-3").calc__label Отделение почты РФ
+		.calc__total 
+			span.calc__total_text Стоимость доставки: 
+			span.calc__total_cont от 
+				span.calc__total_span 201
+				|  руб.  1 рабочий день
+
+		.mini_title Пункты выдачи заказов в 
+			span Москве
+			| :
+		//- .map
+			//- .map__container
+			//- 	.map__left
+			//- 		//- ul.map__list
+			//- 		//- 	li.map__item
+			//- 		//- 		span ул. Пушкинская, д. 10.
+			//- 		//- 		span 156,80 руб. 3 рабочих дня
+			//- 		//- 		span Пн-Сб 09:00-20:00 (без п-ва), Вс вых
+			//- 		//- 		span.map__hideControl
+			//- 		//- 			span Развернуть описание
+			//- 		//- 		.map__hideText text text text text text text text
+			//- 		//- 	li.map__item
+			//- 		//- 		span ул. Рязанский проспект, д. 62.
+			//- 		//- 		span 156,80 руб. 3 рабочих дня
+			//- 		//- 		span Пн-Сб 09:00-20:00 (без п-ва), Вс вых
+			//- 		//- 		span.map__hideControl
+			//- 		//- 			span Развернуть описание
+			//- 		//- 		.map__hideText text text text text text text text
+			//- 		//- 	li.map__item
+			//- 		//- 		span ул. Пушкинская, д. 10.
+			//- 		//- 		span 156,80 руб. 3 рабочих дня
+			//- 		//- 		span Пн-Сб 09:00-20:00 (без п-ва), Вс вых
+			//- 		//- 		span.map__hideControl
+			//- 		//- 			span Развернуть описание
+			//- 		//- 		.map__hideText text text text text text text text
+			//- 		//- 	li.map__item
+			//- 		//- 		span ул. Пушкинская, д. 10.
+			//- 		//- 		span 156,80 руб. 3 рабочих дня
+			//- 		//- 		span Пн-Сб 09:00-20:00 (без п-ва), Вс вых
+			//- 		//- 		span.map__hideControl
+			//- 		//- 			span Развернуть описание
+			//- 		//- 		.map__hideText text text text text text text text
+			//- 		//- 	li.map__item
+			//- 		//- 		span ул. Пушкинская, д. 10.
+			//- 		//- 		span 156,80 руб. 3 рабочих дня
+			//- 		//- 		span Пн-Сб 09:00-20:00 (без п-ва), Вс вых
+			//- 		//- 		span.map__hideControl
+			//- 		//- 			span Развернуть описание
+			//- 		//- 		.map__hideText text text text text text text text
+			//- 		//- 	li.map__item
+			//- 		//- 		span ул. Пушкинская, д. 10.
+			//- 		//- 		span 156,80 руб. 3 рабочих дня
+			//- 		//- 		span Пн-Сб 09:00-20:00 (без п-ва), Вс вых
+			//- 		//- 		span.map__hideControl
+			//- 		//- 			span Развернуть описание
+			//- 		//- 		.map__hideText text text text text text text text
+			//- 		//- 	li.map__item
+			//- 		//- 		span ул. Пушкинская, д. 10.
+			//- 		//- 		span 156,80 руб. 3 рабочих дня
+			//- 		//- 		span Пн-Сб 09:00-20:00 (без п-ва), Вс вых
+			//- 		//- 		span.map__hideControl
+			//- 		//- 			span Развернуть описание
+			//- 		//- 		.map__hideText text text text text text text text
+			//- 		//- 	li.map__item
+			//- 		//- 		span ул. Пушкинская, д. 10.
+			//- 		//- 		span 156,80 руб. 3 рабочих дня
+			//- 		//- 		span Пн-Сб 09:00-20:00 (без п-ва), Вс вых
+			//- 		//- 		span.map__hideControl
+			//- 		//- 			span Развернуть описание
+			//- 		//- 		.map__hideText text text text text text text text
+			//- 		//- 	li.map__item
+			//- 		//- 		span ул. Пушкинская, д. 10.
+			//- 		//- 		span 156,80 руб. 3 рабочих дня
+			//- 		//- 		span Пн-Сб 09:00-20:00 (без п-ва), Вс вых
+			//- 		//- 		span.map__hideControl
+			//- 		//- 			span Развернуть описание
+			//- 		//- 		.map__hideText text text text text text text text
+			//- 		//- 	li.map__item
+			//- 		//- 		span ул. Пушкинская, д. 10.
+			//- 		//- 		span 156,80 руб. 3 рабочих дня
+			//- 		//- 		span Пн-Сб 09:00-20:00 (без п-ва), Вс вых
+			//- 		//- 		span.map__hideControl
+			//- 		//- 			span Развернуть описание
+			//- 		//- 		.map__hideText text text text text text text text
+			//- 		//- ul.map__list.hide
+			//- 		//- 	li.map__item
+			//- 		//- 		span ул. Гладкова, д. 3.
+			//- 		//- 		span 156,80 руб. 3 рабочих дня
+			//- 		//- 		span Пн-Сб 09:00-20:00 (без п-ва), Вс вых
+			//- 		//- 		span.map__hideControl
+			//- 		//- 			span Развернуть описание
+			//- 		//- 		.map__hideText text text text text text text text
+			//- 		//- 	li.map__item
+			//- 		//- 		span ул. Есенина, д. 5.
+			//- 		//- 		span 156,80 руб. 3 рабочих дня
+			//- 		//- 		span Пн-Сб 09:00-20:00 (без п-ва), Вс вых
+			//- 		//- 		span.map__hideControl
+			//- 		//- 			span Развернуть описание
+			//- 		//- 		.map__hideText text text text text text text text
+			//- 	.map__right
+			//- 		.yaMap#map
+
+		h2.title.title__line Вы смотрели
+		- var plate = 4;
+		- var col = 4;
+		include block/product.jade

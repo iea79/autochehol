@@ -1,0 +1,125 @@
+.deliveryAndPay {
+	max-width: 1523px;
+	padding-bottom: 41px;
+	&__item {
+		width: 100%;
+		@media (min-width: 992px) {
+			.title__line {
+				margin-bottom: 50px;
+			}
+
+			&:first-child {
+				width: 45.7%;
+			}
+			&:last-child {
+				width: 54.3%;
+			}
+		}
+	}
+	@media (max-width: 767px) {
+		padding-bottom: 0;
+		> div {
+			margin-bottom: 42px;
+			&:last-child {
+				margin-bottom: 18px;
+			}
+		}
+
+	}
+}
+
+.pay {
+	padding-top: 42px;
+	&__item {
+		@media (min-width: 768px) {
+			&:first-child {
+				width: 29.6%;
+			}
+			&:nth-child(2) {
+				width: 26.7%;
+			}
+			&:nth-child(3) {
+				width: 36%;
+			}
+		}
+		img {
+			margin-right: 10px;
+		}
+	}
+	&__label {
+		font-size: 22px;
+		letter-spacing: .1em;
+		line-height: 1.14;
+		margin-bottom: 31px;
+		color: #ec3438;
+		font-weight: 600;
+	}
+	@media (max-width: 767px) {
+		padding-top: 6px;
+		margin-left: -22px;
+		> div {
+			padding-left: 22px;
+			margin-bottom: 23px;
+		}
+		&__label {
+			font-size: 11px;
+			margin-bottom: 22px;
+		}
+	    &__item {
+			width: 50%;
+			img {
+				max-width: 40%;
+			}
+			&:last-child {
+				width: 100%;
+				img {
+					max-width: 17%;
+					margin-top: -8px;
+				}
+			}
+	    }
+	}
+}
+
+.deliveryComp {
+	max-width: 107%;
+	margin-left: -43px;
+	align-items: center;
+	margin-bottom: 21px;
+	> div {
+		padding-left: 43px;
+		margin-bottom: 34px;
+	}
+	&__item {
+		img {
+			// width: 72%;
+		}
+	}
+	&__link {
+		@extend %link;
+		border-bottom-color: rgba(#5d5d5d, .5);
+		margin-right: 14%;
+		&:hover {
+			border-bottom-color: transparent;
+			
+		}
+	}
+	@media (max-width: 767px) {
+		margin-left: -30px;
+		margin-bottom: 0;
+		> div {
+			padding-left: 30px;
+			margin-bottom: 28px;
+		}
+	    &__item {
+	    	width: 33.3%;
+	    }
+	    &__link {
+	    	font-size: 10px;
+	    	margin-right: 20%;
+	    	&:last-child {
+	    		margin-right: 0;
+	    	}
+	    }
+	}
+}
