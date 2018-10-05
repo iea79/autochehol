@@ -1,0 +1,109 @@
+.shopThumbs {
+	position: absolute;
+	padding-right: 53px;
+	left: 0;
+	right: 0;
+	bottom: -9.7%;
+	padding-right: 102px;
+	&__item {
+		cursor: pointer;
+		background-color: #101010;
+		img {
+			opacity: .6;
+		}
+	}
+	.slick {
+		&-slide {
+			
+		}
+		&-list {
+			max-width: 740px;
+			margin: auto;
+		}
+		&-current {
+			img {
+				opacity: 1;
+			}
+		}
+		&-arrow {
+			position: absolute;
+			border: none;
+			font-size: 0;
+			background-color: transparent;
+			width: 32px;
+			height: 13px;
+			// top: 50%;
+			bottom: 11px;
+			cursor: pointer;
+			z-index: 10;
+			transition: all .3s;
+			color: #5d5d5d;
+			&:hover {
+				opacity: .8;
+			}
+			&:before,&:after {
+				content: '';
+				position: absolute;
+				left: 0;
+				border: 1px solid;
+				width: 14px;
+			}
+			&:before {
+				top: 1px;
+				transform: rotate(45deg);
+			}
+			&:after {
+				bottom: 0px;
+				transform: rotate(-45deg);
+			}
+		}
+		&-next {
+			right: 10px;
+			&:before {
+	
+			}
+		}
+		&-prev {
+			bottom: 10px;
+			right: 63px;
+			transform: rotate(180deg);
+			&:before {
+	
+			}
+		}
+		&-dots {
+			li {
+				&.slick-active {
+	
+				}
+				button {
+					
+				}
+			}
+		}
+	}
+	@media (max-width: 767px) {
+	    padding-right: 50px;
+	    .slick {
+	    	&-arrow {
+	    		width: 20px;
+	    		height: 8px;
+	    		bottom: 4px;
+	    		&:before,&:after {
+	    			width: 6px;
+	    		}
+	    		&:before {
+	    		}
+	    		&:after {
+	    		}
+	    	}
+    		&-next {
+    			right: 0;
+				bottom: 5px;
+    		}
+    		&-prev {
+				right: 29px;
+    		}
+	    }
+	}
+}

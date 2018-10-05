@@ -1,0 +1,84 @@
+.install {
+	max-width: 1415px;
+	padding-top: 31px;
+	padding-bottom: 35px;
+	font-size: 18px;
+	&__item {
+		width: 25%;
+	}
+	&__img {
+		margin-bottom: 58px;
+		&:before {
+			content: '';
+			display: inline-block;
+			vertical-align: bottom;
+			padding-bottom: 94px;
+		}
+		img {
+			vertical-align: bottom;
+			max-width: 95%;
+		}
+		@media (max-width: 991px) {
+			&:before {
+				content: '';
+				padding-bottom: 70px;
+			}
+			img {
+			    max-width: 60%;
+			}
+		}
+		@media (max-width: 767px) {
+			margin-bottom: 30px;
+		    &:before {
+		    	// display: none;
+		    }
+		    img {
+		    	max-width: 54%;
+		    }
+		}
+	}
+	&__name {
+		font-weight: 600;
+		letter-spacing: 0.11em;
+		margin-bottom: 26px;
+	}
+	&__adress {
+		margin-bottom: 20px;
+	}
+	&__price {
+		font-size: 22px;
+		letter-spacing: 0.11em;
+	}
+	@media (max-width: 991px) {
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+    	font-size: 15px;
+	    &__name {
+	    }
+	    &__price {
+	    	font-size: 20px;
+	    }
+	}
+	@media (max-width: 767px) {
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+    	font-size: 10px;
+    	margin-left: -20px;
+    	> div {
+			padding-left: 20px;
+			margin-bottom: 26px;
+    	}
+    	&__item {
+    		width: 50%;
+    	}
+	    &__name {
+	    	margin-bottom: 15px;
+	    }
+	    &__adress {
+	    	margin-bottom: 10px;
+	    }
+	    &__price {
+	    	font-size: 20px;
+	    }
+	}
+}

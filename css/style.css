@@ -2775,9 +2775,6 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       .paymentItem__link {
         font-size: 10px; } }
 
-* {
-  word-wrap: break-word; }
-
 .backLink {
   position: relative;
   font-size: 20px;

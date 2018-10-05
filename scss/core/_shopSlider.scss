@@ -1,0 +1,28 @@
+.shopSlider {
+	&__wrap {
+		width: 44.5%;
+		margin-right: 5.5%;
+		position: relative;
+		float: left;
+		padding-bottom: 0%;
+		margin-bottom: 40px;
+		
+		// padding-right: 1.1%;
+		
+	}
+	&__item {
+		width: 100%;
+		img {
+			width: 100%;
+		}
+	}
+	@media (max-width: 767px) {
+		&__wrap {		
+		    width: auto;
+		    float: none;
+		    margin-right: -34px;
+		    margin-left: -34px;
+		    margin-bottom: 59px;
+		}
+	}
+}
