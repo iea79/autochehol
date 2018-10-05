@@ -1,0 +1,249 @@
+extends template.jade
+
+block variables
+	-var pageClass = "";
+
+block title
+	title Автомобильные чехлы Audi Q5
+
+block content
+	.container_center
+		a.backLink(href="shop.html") Вернуться <br>назад
+		.shopItem
+			.shopItem__top
+				.shopSlider__wrap
+					.shopSlider
+						- var slide = 5;
+						-for (var i = 0; i < slide; i++) {
+							.shopSlider__item
+								img(src="img/shopItem"+i+".jpg" alt="")
+						-};
+					.shopThumbs
+						-for (var i = 0; i < slide; i++) {
+							.shopThumbs__item
+								img(src="img/shopItem"+i+".jpg" alt="")
+						-};
+
+				.shopItem__info
+					.shopItem__title Автомобильные чехлы Audi Q5
+
+					.shopItem__order
+						.shopItem__price 1390 
+							span.rub ₽
+						.shopItem__count 
+							.shopItem__check.mobileVisible
+								<svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16.93px" height="11.357px" viewBox="-0.307 5.174 16.93 11.357" enable-background="new -0.307 5.174 16.93 11.357" xml:space="preserve">
+								<line fill="none" stroke="#63913E" stroke-miterlimit="10" x1="0.089" y1="5.479" x2="8.349" y2="16.227"/>
+								<line fill="none" stroke="#63913E" stroke-miterlimit="10" x1="7.965" y1="16.227" x2="16.226" y2="5.479"/>
+								</svg>
+								span В наличии
+							.shopItem__countRezult 1 шт
+							.shopItem__minus
+								<svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25.461px" height="25.462px" viewBox="0 0 25.461 25.462" enable-background="new 0 0 25.461 25.462" xml:space="preserve">
+								<circle fill="#EAEAEA" cx="12.731" cy="12.731" r="12.731"/>
+								<line fill="none" stroke="#2D2D2D" stroke-miterlimit="10" x1="4.577" y1="12.731" x2="20.885" y2="12.731"/>
+								</svg>
+							.shopItem__plus
+								<svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25.461px" height="25.462px" viewBox="0 0 25.461 25.462" enable-background="new 0 0 25.461 25.462" xml:space="preserve">
+								<circle fill="#EAEAEA" cx="12.731" cy="12.731" r="12.731"/>
+								<line fill="none" stroke="#2D2D2D" stroke-miterlimit="10" x1="4.577" y1="12.731" x2="20.885" y2="12.731"/>
+								<line fill="none" stroke="#2D2D2D" stroke-miterlimit="10" x1="12.731" y1="20.885" x2="12.731" y2="4.577"/>
+								</svg>
+							.shopItem__check.mobileHide
+								<svg version="1.1" id="Шар_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16.93px" height="11.357px" viewBox="-0.307 5.174 16.93 11.357" enable-background="new -0.307 5.174 16.93 11.357" xml:space="preserve">
+								<line fill="none" stroke="#63913E" stroke-miterlimit="10" x1="0.089" y1="5.479" x2="8.349" y2="16.227"/>
+								<line fill="none" stroke="#63913E" stroke-miterlimit="10" x1="7.965" y1="16.227" x2="16.226" y2="5.479"/>
+								</svg>
+								span В наличии
+
+
+					.shopItem__action
+						button.btn.btn_mb Купить
+					
+					.shopItem__table
+						.shopItem__cell
+							ul.shopItem__detail.shopItem__detail_grey
+								li.shopItem__detailItem Производитель: 
+								li.shopItem__detailItem Артикул:
+								li.shopItem__detailItem Материал:
+								li.shopItem__detailItem Цвет: 
+								li.shopItem__detailItem Материал боковин: 
+								li.shopItem__detailItem Материал спинки: 
+								li.shopItem__detailItem Материал середины: 
+						.shopItem__cell
+							ul.shopItem__detail
+								li.shopItem__detailItem Автопилот
+								li.shopItem__detailItem au-a6-aa6c6sw-chebe-e
+								li.shopItem__detailItem Экокожа с алькантарой
+								li.shopItem__detailItem Черный с серым
+								li.shopItem__detailItem Экокожа
+								li.shopItem__detailItem Экокожа
+								li.shopItem__detailItem Алькантара
+					a(href="#").parameters Все характеристики
+
+		.catalogueItem
+			.catalogueItem__body
+				.catalogueItem__left
+
+					.shopItem__description
+						.shopItem__saleTtile Варианты материалов и цветов
+						p Спинка и боковины выполнены из экокожи.
+					.shopItem__saleTtile Выберите материал для середины сиденья:
+
+					form(action="").catalogueForm
+						.catalogueForm__row
+							input(type="radio" name="catalogueItemRadio" checked)#catalogueItem-1
+							label(for="catalogueItem-1") Перфорированная экокожа
+						.catalogueForm__row
+							input(type="radio" name="catalogueItemRadio")#catalogueItem-2
+							label(for="catalogueItem-2") Алькантара
+						.catalogueForm__row
+							input(type="radio" name="catalogueItemRadio")#catalogueItem-3
+							label(for="catalogueItem-3") Жакард
+						.catalogueForm__row
+							input(type="radio" name="catalogueItemRadio")#catalogueItem-4
+							label(for="catalogueItem-4") Лен
+
+					form(action="").catalogueColor
+						.shopItem__saleTtile Выберите вариант расцветки:
+						.catalogueColor__body
+							- var colorItem = 19;
+							- for (var i = 0; i < colorItem; i++) {
+								.catalogueColor__item
+									input(id="catalogueColor-"+i+"" type="radio" name="catalogueColor")
+									label(class="catalogueColor__label catalogueColor__label_"+i+"" for="catalogueColor-"+i+"")
+							-};
+
+					.shopItem__saleTtile Применимость
+
+					.catalogueImg
+						.catalogueImg__cell
+							img(src="img/audi_logo.png", alt="")
+						.catalogueImg__cell
+							img(src="img/audi_car.jpg", alt="")
+
+					ul.shopItem__detail
+						li.shopItem__detailItem Марка: Audi
+						li.shopItem__detailItem Модель: A4
+						li.shopItem__detailItem Модификация: А 4 с B8 c 2011 по нв
+						li.shopItem__detailItem Год: 2010 2011 2012 2013 2014
+						li.shopItem__detailItem Номер кузова: B4
+						li.shopItem__detailItem Тип кузова: Седан
+
+
+				.catalogueItem__right
+
+					.catalogueSale
+						.catalogueSale__title Акция
+						ul.catalogueSale__list
+							li 2 комплекта 
+								span 7% скидка
+							li 3 комплекта 
+								span скидка 10%
+							li 5 комплектов 
+								span скидка 15%
+						p Время экономить, объединяйтесь. + бесплатная доставка по Москве
+
+					.catalogueSale.catalogueSale_hot
+						.catalogueSale__title.catalogueSale__title_hot Горячее предложение
+						p Комбинированные модельные чехлы Экокожа с жакардом, от 2390 р за комплект
+
+					.catalogueSale
+						.catalogueSale__title Акция
+						p Индивидуальный пошив от 7 дней
+						p Доплата 
+							span 700 р
+
+			// begin shopItem__description 
+			.shopItem__description
+				ul.shopItem__tabs#tabs
+					li описание
+					li Гарантия и возврат
+					li Производитель
+				p.tabs-block.
+					Audi Q5 появился на рынке осенью 2008 года. Первоначально линейка двигателей включала в себя одну бензиновую и две дизельные модели. Бензиновый двигатель 2,0 л с непосредственным впрыском топлива и турбонаддувом развивает мощность 211 л.с. и крутящий момент 350 Н·м. В сегменте дизельных двигателей предлагаются 2-литровый TDI мощностью 170 л.с., развивающий крутящий момент 350 Н·м, и 3-литровая шестицилиндровая модель мощностью 240 л.с., выдающая крутящий момент 500 Н·м. В июле 2009 года линейка двигателей дополнилась двумя новыми моделями — 2.0 TDI 143 л.с. и 2.0 TFSI 180 л.с[5].
+				p.tabs-block.hide.
+					В Audi Q5 устанавливается новая разработка инженеров Audi — 7-ступенчатая роботизированная коробка передач S tronic, предназначенная для передачи крутящего момента до 500 Н·м. Постоянный полный привод quattro (дифференциал Torsen) передаёт крутящий момент на все четыре колеса в соотношении 40:60 (передняя ось/задняя ось).
+				p.tabs-block.hide.
+					Audi Q5 появился на рынке осенью 2008 года. Первоначально линейка двигателей включала в себя одну бензиновую и две дизельные модели. Бензиновый двигатель 2,0 л с непосредственным впрыском топлива и турбонаддувом развивает мощность 211 л.с. и крутящий момент 350 Н·м. В сегменте дизельных двигателей предлагаются 2-литровый TDI мощностью 170 л.с., развивающий крутящий момент 350 Н·м, и 3-литровая шестицилиндровая модель мощностью 240 л.с., выдающая крутящий момент 500 Н·м. В июле 2009 года линейка двигателей дополнилась двумя новыми моделями — 2.0 TDI 143 л.с. и 2.0 TFSI 180 л.с[5].
+			// end shopItem__description 
+
+		h2.title.title__line.mobileHide Похожие товары
+		.mobileHide
+			- var plate = 4;
+			- var col = 4;
+			include block/product.jade
+
+		.viewMore
+			a.viewMore__link.mobileHide(href="#") Смотреть еще
+
+		h2.title.title__line.mobileHide Как заказать
+
+		.howOrder.mobileHide
+			.howOrder__grid.grid
+				.howOrder__item.howOrder__item_lineRed
+					.howOrder__img
+						img(src="img/zayavka_online.svg", alt="")
+					.howOrder__text Сделайте заявку на сайте или по другим контактам
+				.howOrder__item.howOrder__item_lineRed
+					.howOrder__img
+						img(src="img/soglasovanie.svg", alt="")
+					.howOrder__text С Вами согласуют удобный Вам вариант доставки
+				.howOrder__item.howOrder__item_lineRed
+					.howOrder__img
+						img(src="img/otpracka.svg", alt="")
+					.howOrder__text Отправка на следующий день
+				.howOrder__item.howOrder__item_lineRed
+					.howOrder__img
+						img(src="img/sms_o_dostavke.svg", alt="")
+					.howOrder__text Получаете СМС о приходе товара и забираете заказ
+
+		include block/delivery.jade
+
+		h2.title.title__line.mobileHide Профессиональная установка чехлов Ауди А4
+
+		.howOrder.mobileHide
+			.howOrder__grid.grid
+				.howOrder__item.howOrder__item_lineNone
+					.howOrder__img
+						img(src="img/install_1.svg", alt="")
+					.howOrder__title Установка в нашем установочном центре в Москве
+					.howOrder__text ул. Южнопортовая д.15 стр. 1
+					.howOrder__text 
+						span 1000 
+						| р
+				.howOrder__item.howOrder__item_lineNone
+					.howOrder__img
+						img(src="img/install_2.svg", alt="")
+					.howOrder__title Установка с выездом по Москве
+					.howOrder__text 
+						span 2000 
+						| р
+				.howOrder__item.howOrder__item_lineNone
+					.howOrder__img
+						img(src="img/install_3.svg", alt="")
+					.howOrder__title Установка с подшивкой чехлов к сиденьям
+					.howOrder__text ул. Южнопортовая д.15 стр. 1
+					.howOrder__text 
+						span 3500 
+						| р
+				.howOrder__item.howOrder__item_lineNone
+					.howOrder__img
+						img(src="img/install_4.svg", alt="")
+					.howOrder__title Установка с подшивкой чехлов к сиденьям с выездом
+					.howOrder__text 
+						span 4000 
+						| р
+				
+		h2.title.title__line.mobileHide Вы смотрели
+		.mobileHide
+			- var plate = 4;
+			- var col = 4;
+			include block/product.jade
+
+		.viewMore
+			a.viewMore__link.mobileHide(href="#") Смотреть еще
+
+		.mobileHide
+			include block/aboutFur.jade
+

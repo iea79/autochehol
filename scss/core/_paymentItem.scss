@@ -1,0 +1,84 @@
+.paymentItem {
+	display: inline-block;
+	min-height: 130px;
+	max-width: 500px;
+	margin: 0 46px 39px -31px;
+	padding: 10px 10px 56px 162px;
+	text-decoration: none;
+	background-repeat: no-repeat;
+	background-size: contain;
+	@media (max-width: 767px) {
+	  padding: 162px 10px 10px 10px;
+	  margin-right: 0;
+	}
+	&:nth-child(1) {
+		background-image: url(../img/payment-1.svg);
+		background-size: 98px 72px;
+		background-position: 0 24px;
+		@media (max-width: 767px) {
+			background-size: 70px;
+		    background-position: center 20px;
+		}
+	}
+	&:nth-child(2) {
+		background-image: url(../img/payment-2.svg);
+		background-size: 80px 100px;
+		background-position: 21px 6px;
+		@media (max-width: 767px) {
+			background-size: 70px;
+		    background-position: center 0px;
+		}
+	}
+	&:nth-child(3) {
+		background-image: url(../img/na_schet_org.svg);
+		background-size: 103px 84px;
+		background-position: 0 0;
+		@media (max-width: 767px) {
+			background-size: 70px;
+		    background-position: center 10px;
+		}
+	}
+	&:nth-child(4) {
+		background-image: url(../img/payment-4.svg);
+		background-size: 75px 82px;
+		background-position: 23px 35px;
+		@media (max-width: 767px) {
+			background-size: 70px;
+		    background-position: center 0px;
+		}
+	}
+	&__title {
+		margin-bottom: 20px;
+		font-size: 22px;
+		font-weight: 900;
+		color: #1d1d1d;
+	}
+	&__text {
+		margin-bottom: 20px;
+		// font-size: 16px;
+		color: #1d1d1d;
+	}
+	&__link {
+		display: inline-block;
+		font-size: 14px;
+		padding-bottom: 5px;
+		border-bottom: 1px solid transparent;
+		color: #1d1d1d;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: 0.3s;
+		&:hover {
+			color: #ec3438;
+			border-color: #1d1d1d;
+		}
+	}
+	@media (max-width: 767px) {
+		padding-top: 100px;
+	    &__title {
+	    	font-size: 16px;
+	    }
+	    &__link {
+	    	font-size: 10px;
+	    }
+	}
+}

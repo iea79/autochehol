@@ -1,0 +1,51 @@
+.accordeon {
+	margin-bottom: 115px;
+	@media (max-width: 767px) {
+	    margin-bottom: 70px;
+	}
+	&__title {
+		margin-bottom: 55px;
+		font-size: 45px;
+		font-weight: 900;
+	}
+	&__item {
+		margin-bottom: 20px;
+		font-size: 20px;
+		@media (max-width: 767px) {
+		    font-size: 14px;
+		}
+		span {
+			display: inline-block;
+			border-bottom: 1px solid transparent;
+			padding-bottom: 5px;
+			transition: .3s;
+			cursor: pointer;
+			user-select: none;
+			&:hover {
+				color: #ec3438;
+				@media (max-width: 767px) {
+				  border-color: #bbb;
+				}
+			}
+		}
+	}
+	&__element {
+		max-height: 0;
+		overflow: hidden;
+		transition: .3s;
+		&.active {
+			max-height: 1000px;
+		}
+	}
+	&__text {
+		max-width: 1245px;
+        letter-spacing: 0.11em;
+        line-height: 1.6;
+		&:first-child {
+			margin-top: 0;
+		}
+		&:last-child {
+			margin-bottom: 60px;
+		}
+	}
+}

@@ -11,8 +11,8 @@ block content
 		a.backLink(href="shop.html") Смотреть каталог
 
 		h2.title.title__line Автомобильные меховые накидки <br>из овчины на сиденья в Архангельске
-		- var plate = 4;
-		- var col = 4;
+		- var plate = 3;
+		- var col = 3;
 		include block/product.jade
 
 		.viewMore
@@ -20,6 +20,10 @@ block content
 
 
 		h2.title.title__line Адреса пунктов выдачи в Архангельске
+
+		.deliveryGrid__action
+			a.deliveryComp__link(href="#") Рассчитать доставку
+			a.deliveryComp__link(href="#") Где купить
 
 		.deliveryGrid
 			.deliveryGrid__item
@@ -37,9 +41,46 @@ block content
 			.deliveryGrid__item
 				img(src="img/cdek.png", alt="" width="106")
 		
-		.deliveryGrid__action
-			a.deliveryComp__link(href="#") Рассчитать доставку
-			a.deliveryComp__link(href="#") Где забрать
+		.sales
+			.sales__grid.grid
+				.sales__item
+					.sales__title Акция
+					ul
+						li 2 комплекта <b>7% скидка</b>
+						li 3 комплекта <b>скидка 10%</b>
+						li 5 комплектов <b>скидка 15%</b>
+					p.
+						Время экономить, объединяйтесь. <br>
+						+ бесплатная доставка по Москве
+				.sales__item.sales__item_danger
+					.sales__title Горячее предложение
+					p.
+						Комбинированные модельные чехлы <br>
+						Экокожа с жакардом, <br>
+						<b>от 2390 р</b> за комплект
+				.sales__item
+					.sales__title Акция
+					p.
+						Индивидуальный пошив <br>от 7 дней
+					p.
+						Доплата <b>700 р</b>
+
+		h2.title.title__line Оплата заказа
+		.payment__body
+			.paymentItem
+				.paymentItem__title Оплата наличными
+				.paymentItem__text при получении в пунке выдачи или крурьеру
+			.paymentItem
+				.paymentItem__title Оплата банковской картой
+				.paymentItem__text при получении или при оформлении заказа
+			.paymentItem
+				.paymentItem__title Оплата по квитанции
+				.paymentItem__text в любом отделении банка или через клиент банк
+				a(href="#").paymentItem__link Cкачать квитанцию
+			.paymentItem
+				.paymentItem__title Оплата с расчетного счета организации
+				.paymentItem__text Полный пакет бухгалтерских документов, договор
+				a(href="#").paymentItem__link Cкачать квитанцию
 
 		.typoText
 			h4 Где купить меховую накидку из овчины в Москве
@@ -47,3 +88,14 @@ block content
 			p Текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст текст.
 
 			p Текст текст текст текст текст текст текст текст текст текст текст текст. Текст текст текст текст текст текст текст текст текст текст текст.
+
+		h2.title.title__line Вопросы и ответы
+		include block/faq.jade
+
+		h2.title.title__line Вы смотрели
+		- var plate = 4;
+		- var col = 4;
+		include block/product.jade
+
+		.viewMore
+			a.viewMore__link(href="#") Смотреть еще
