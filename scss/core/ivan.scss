@@ -262,21 +262,21 @@
 	&__circle {
 		display: block;
 		float: left;
-		width: 34px;
-		height: 34px;
-		background-color: #cecece;
+		width: 30px;
+		height: 30px;
+		background-color: #fff;
+		border: 4px solid #ec3438;
 		border-radius: 50%;
-		position: relative;
-		&:after {
+		position: relative;		&:after {
 			content: '';
 			display: none;
-			width: 22px;
-			height: 22px;
-			background-color: #5d5d5d;
+			width: 14px;
+			height: 14px;
+			background-color: #ec3438;
 			border-radius: 50%;
 			position: absolute;
-			top: 6px;
-			left: 6px;
+			top: 4px;
+			left: 4px;
 		}
 	}
 	&__label {
@@ -484,6 +484,11 @@
 }
 .textCenter {
 	text-align: center;
+}
+.textCenterMobile {
+	@media (max-width: 767px) {
+	  text-align: center;
+	}
 }
 .backBtn {
 	display: none;
@@ -807,5 +812,11 @@
 	display: none !important;
 	@media (max-width: 767px) {
 	  display: block !important;
+	}
+}
+.mobileVisibleInline {
+	display: none !important;
+	@media (max-width: 767px) {
+	  display: inline-block !important;
 	}
 }

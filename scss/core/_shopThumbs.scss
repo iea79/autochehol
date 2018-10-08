@@ -1,13 +1,17 @@
 .shopThumbs {
-	position: absolute;
+	// position: absolute;
 	padding-right: 53px;
-	left: 0;
-	right: 0;
-	bottom: -9.7%;
+	// left: 0;
+	// right: 0;
+	// bottom: -9.7%;
 	padding-right: 102px;
+	margin-top: 15px;
+	@media (min-width: 768px) {
+		margin-top: 24px;
+	}		
 	&__item {
 		cursor: pointer;
-		background-color: #101010;
+		background-color: #fff;
 		img {
 			opacity: .6;
 		}
@@ -33,13 +37,14 @@
 			width: 32px;
 			height: 13px;
 			// top: 50%;
-			bottom: 11px;
+			margin-bottom: -10px;
+			bottom: 50%;
 			cursor: pointer;
 			z-index: 10;
 			transition: all .3s;
-			color: #5d5d5d;
+			color: #989898;
 			&:hover {
-				opacity: .8;
+				color: #1d1d1d;
 			}
 			&:before,&:after {
 				content: '';
@@ -64,7 +69,7 @@
 			}
 		}
 		&-prev {
-			bottom: 10px;
+			margin-bottom: -11px;
 			right: 63px;
 			transform: rotate(180deg);
 			&:before {
@@ -82,13 +87,37 @@
 			}
 		}
 	}
+	@media (max-width: 1199px) {
+		padding-right: 70px;
+	    .slick {
+	    	&-arrow {
+	    		width: 26px;
+	    		height: 12px;
+	    		margin-bottom: -5px;
+	    		&:before,&:after {
+	    			width: 11px;
+	    		}
+	    		&:before {
+	    		}
+	    		&:after {
+	    		}
+	    	}
+    		&-next {
+    			right: 0;
+				margin-bottom: -4px;
+    		}
+    		&-prev {
+				right: 38px;
+    		}
+	    }
+	}
 	@media (max-width: 767px) {
 	    padding-right: 50px;
 	    .slick {
 	    	&-arrow {
 	    		width: 20px;
 	    		height: 8px;
-	    		bottom: 4px;
+	    		margin-bottom: -4px;
 	    		&:before,&:after {
 	    			width: 6px;
 	    		}
@@ -99,7 +128,7 @@
 	    	}
     		&-next {
     			right: 0;
-				bottom: 5px;
+				margin-bottom: -3px;
     		}
     		&-prev {
 				right: 29px;

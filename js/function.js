@@ -87,6 +87,20 @@ $(document).ready(function() {
             $(this).next('.accordeon__element').addClass('active');
         }
     });
+
+    // Табы в catalogue-item
+    var houseTabCatalogue = $('#tabs').find('li');
+    var houseGroupCatalogue = $('.tabs-block');
+    houseTabCatalogue.click(function() {
+        var index = $(this).index();
+        houseTabCatalogue.removeClass('active');
+        $(this).addClass('active');
+        houseGroupCatalogue.addClass('hide');
+        houseGroupCatalogue.eq(index).removeClass('hide');
+    });
+
+    matchHeightcatalogueItem();
+
 });
 
 $(window).resize(function(event) {
@@ -95,10 +109,19 @@ $(window).resize(function(event) {
     if (TempApp.resized == windowWidth) { return; }
     TempApp.resized = windowWidth;
 
-	checkOnResize();
+    checkOnResize();
+
+    matchHeightcatalogueItem();
 
 });
 
+function matchHeightcatalogueItem() {
+    var catItem = $('.catalogueForm__row label');
+    if (catItem) {
+        // console.log('catItem');
+        catItem.matchHeight();
+    }
+};
 function checkOnResize() {
    	// gridMatch();
     // fontResize();
