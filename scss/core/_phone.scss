@@ -1,7 +1,7 @@
 .phone {
 	font-weight: 900;
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 12px;
 	padding: 5px 0;
 	border-bottom: 1px solid transparent;
 	color: #1d1d1d;
@@ -16,5 +16,8 @@
 	}
 	@media (min-width: 1200px) {
 		font-size: 20px;
+	}
+	@media (max-width: 767px) {
+	    letter-spacing: 1px;
 	}
 }

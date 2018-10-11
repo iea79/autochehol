@@ -8,7 +8,7 @@ block title
 
 block content
 	.container_center
-		a.backLink(href="shop.html") Вернуться <br>назад
+		a.backLink(href="catalog.html") Вернуться <br>назад
 		.shopItem
 			.shopItem__top
 				.shopSlider__wrap
@@ -27,6 +27,8 @@ block content
 				.shopItem__info
 					.shopItem__title Автомобильные чехлы Audi Q5
 
+					.shopItem__action.mobileVisible(data-scroll-to-fixed)
+						button.btn.btn_mb в корзину   1390 ₽
 					.shopItem__order
 						.shopItem__price 1390 
 							span.rub ₽
@@ -57,7 +59,7 @@ block content
 								span В наличии
 
 
-					.shopItem__action
+					.shopItem__action.mobileHide
 						button.btn.btn_mb Купить
 					
 					.shopItem__table

@@ -44,21 +44,18 @@
 	    top: 62px;
 	}
 	@media (max-width: 767px) {
-		top: 72px;
-		right: 30px;
+		padding-top: 3px;
 	    .icon-cart {
-	    	font-size: 26px;
+	    	font-size: 20px;
 	    }
 	    &__right {
-	    	font-size: 12px;
-	    	padding-left: 10px;
-	    	width: 66px;
+	    	display: none;
 	    }
 	    &__count {
-	    	min-width: 18px;
-	    	line-height: 18px;
-	    	font-size: 12px;
-	    	top: -6px;
+	    	min-width: 16px;
+	    	line-height: 16px;
+	    	font-size: 10px;
+	    	top: -5px;
 	    	left: 34%;
 	    }
 	}

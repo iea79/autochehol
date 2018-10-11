@@ -57,6 +57,20 @@
 			border-color: darken(#ec3438, 10%);
 		}
 	}
+	&_next {
+		border: 1px solid #010101;
+		font-family: Gilroy;
+		font-weight: 400;
+		color: #010101;
+		&:hover {
+			background-color: #010101;
+			border-color: #010101;
+		}
+		&:focus,&:active {
+			background-color: darken(#010101, 4%);
+			border-color: darken(#010101, 4%);
+		}
+	}
 	@media (max-width: 767px) {
 	    border-width: 1px;
 	}

@@ -34,4 +34,18 @@
 	    	font-weight: 600;
 	    }
 	}
+	@media (max-width: 767px) {
+	    &__link {
+	    	font-size: 13px;
+	    }
+		.icon-marker {
+			font-size: 15px;
+		}
+		.icon-tel {
+			font-size: 14px;
+		}
+		.icon-clock {
+			font-size: 12px;
+		}
+	}
 }

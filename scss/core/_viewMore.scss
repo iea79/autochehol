@@ -1,7 +1,9 @@
 .viewMore {
 	margin-bottom: 99px;
+	@extend %clear_a;
 	&__link {
 		color: #1d1d1d;
+		float: left;
 		font-weight: 600;
 		font-size: 16px;
 		padding: 10px 0 13px;
@@ -9,17 +11,39 @@
 		text-transform: uppercase;
 		border-bottom: 1px solid rgba(#5d5d5d, .5);
 		text-decoration: none;
+		margin-right: 30px;
 		&:hover {
 			border-bottom-color: #ec3438;
     		color: #ec3438;
 		}
 	}
+	.pagination {
+		overflow: hidden;
+		padding-left: 6px;
+	}
+	@media (max-width: 1199px) {
+	    &__link {
+	    	float: none;
+	    }
+	    .pagination {
+	    	overflow: initial;
+	    	padding-left: 0;
+	    	margin-left: -5px;
+	    }
+	}
 	@media (max-width: 767px) {
 		margin-bottom: 70px;
+		// text-align: center;
 	    &__link {
 	    	font-size: 10px;
 	    	&:hover {
 	    	}
+	    }
+	    .btn {
+	    	max-width: 230px;
+	    	margin: auto;
+	    	font-size: 13px;
+	    	padding: 15px;
 	    }
 	}
 }

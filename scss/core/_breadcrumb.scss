@@ -1,25 +1,37 @@
 // Breadcrumb ==================================================================
 .breadcrumb {
-	margin: 15px 0;
-	padding: 0;
-	li {
-		display: inline-block;
-		vertical-align: baseline;
-		&:not(:first-child) {
-			&:before {
-				content: '/';
-				display: inline-block;
-			}
+	padding: 2px 0 0;
+	&__link {
+		@extend %link;
+		font-size: 18px;
+		margin-right: 16px;
+		+ .productTitle__back {
 		}
-		&:last-child {
-			a {
-				cursor: default;
-				text-decoration: none;
-			}
+	}
+	&__sep {
+		display: inline-block;
+		&:before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			width: 43px;
+			border-top: 1px solid;
+			margin-right: 21px;
 		}
 		
-		a {
-			font-size: 12px;
+	}
+	@media (max-width: 767px) {
+		&__link {
+		    font-size: 8px;
+		    letter-spacing: 0.05em !important;
+		    padding: 3px 0 !important;
+		    margin-right: 6px;
+		}
+		&__sep {
+			&:before {
+				width: 17px;
+				margin-right: 8px;
+			}
 		}
 	}
 }

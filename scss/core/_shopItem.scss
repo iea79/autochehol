@@ -242,10 +242,32 @@
 			}
 		}
 		&__action {
-			display: none;
+			// display: none;
+			// transition: .3s;
+			// bottom: 100%;
+			text-align: center;
+			margin-bottom: 10px;
 			.btn {
-				font-size: 11px;
-				padding: 9px 35px;
+				transition: .3s;
+				font-size: 12px;
+				padding: 12px 35px;
+				margin-bottom: 20px;
+				background-color: #ec3438;
+			    border-color: #ec3438;
+			    color: #ffffff;
+			}
+			&.is_stuck {
+				// top: auto !important;
+				// bottom: 0 !important;
+				z-index: 50;
+				+ div {
+					// height: 0 !important;
+				}
+				.btn {
+					// width: 80%;
+					margin-bottom: 0px;
+
+				}
 			}
 		}
 		&__description {

@@ -1,0 +1,39 @@
+//- // Button trigger modal modalCart 
+//- button(class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modalCart") Click to open modal
+// Begin Modal modalCart 
+.modal.fade.modalCart#modalCart
+	.modal-dialog
+		.modal-content
+			a(href="#" class="modal-close" data-dismiss="modal")
+			.modal-header
+				.modal-title Корзина
+			.modal-body 
+				.addCart
+					.addCart__row
+						.addCart__item Накидки на сиденья из натуральной шерсти, белые
+						.addCart__item 4500 ₽
+						.addCart__item
+							.addCart__count.js_counter
+								i.plus
+								input(type="text" value="4" readonly) 
+								|шт
+								i.minus
+						.addCart__item 16000 ₽
+					.addCart__row
+						.addCart__item Накидки на сиденья из натуральной шерсти, бежевые с рыжевыми вставками
+						.addCart__item 4500 ₽
+						.addCart__item
+							.addCart__count.js_counter
+								i.plus
+								input(type="text" value="4" readonly) 
+								|шт
+								i.minus
+						.addCart__item 16000 ₽
+
+			.modal-footer
+				.addCart__action
+					.addCart__price 32000 ₽
+					.addCart__btn
+						button.btn.btn_next Продолжить покупки
+						button.btn.btn_warning оформить заказ
+// End modal modalCart 

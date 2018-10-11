@@ -1,26 +1,29 @@
 mixin header
 	.container_center
 		
-		.header__left
-			a(href="/").logo
-		
+		.navbar__toggle
+
 		// begin .header__action 
 		.header__action
 			a.phone(href="tel:") +7 916 997-67-32
-			.soc
-				a(href="#").soc__item 
-					i.icon-whatsapp
-				a(href="#").soc__item 
-					i.icon-viber
-				a(href="#").soc__item 
-					i.icon-telegram
-			.cart
+			.cart(data-toggle="modal" data-target="#modalCart")
 				.cart__left
 					i.icon-cart
 					.cart__count 2
 				.cart__right оформить заказ
+			.soc
+				a(href="#").soc__item 
+					i.icon-whatsapp
+				a(href="#").soc__item.is_descktop 
+					i.icon-viber
+				a(href="#").soc__item.is_descktop 
+					i.icon-telegram
 
 		// end .header__action 
+
+		.header__left
+			a(href="/").logo
+		
 
 		// begin.header__center 
 		.header__center
@@ -48,10 +51,10 @@ mixin header
 
 -if (headerContrast) {
 // begin header 
-header.header.header_contrast
+header.header.header_contrast(data-stiky)
 	+header
 -} else {
 // begin header 
-header.header
+header.header(data-stiky)
 	+header
 -};

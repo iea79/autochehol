@@ -7,6 +7,7 @@
 	margin-top: -9px;
 	margin-bottom: 39px;
 	color: $main_color;
+	z-index: 10;
 	&.hideMobile {
 		@media (max-width: 767px) {
 		  display: none;
@@ -22,10 +23,10 @@
 		left: -102px;
 	}
 	@media (max-width: 767px) {
-	    top: -50px;
+	    // top: -6px;
 	    font-size: 11px;
 	    letter-spacing: 0.1em;
-	    margin-bottom: 6px;
+	    margin-bottom: 30px;
 	    &:before {
 	    	left: -91px;
 	    	top: 50%;
