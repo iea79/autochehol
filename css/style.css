@@ -2910,17 +2910,18 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 .order {
   max-width: 900px;
   margin-top: 52px;
-  margin-bottom: 100px;
-  font-weight: bold; }
+  margin-bottom: 100px; }
   .order__title {
     margin-bottom: 30px;
-    font-size: 19px; }
+    font-size: 22px;
+    font-weight: bold; }
   .order__num {
     float: right;
-    font-size: 19px; }
+    font-size: 22px;
+    font-weight: bold; }
   .order p {
     max-width: 300px;
-    font-size: 14px; }
+    line-height: 1.2; }
   @media (max-width: 767px) {
     .order {
       margin-top: 20px; }

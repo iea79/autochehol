@@ -824,18 +824,19 @@
 	max-width: 900px;
 	margin-top: 52px;
 	margin-bottom: 100px;
-	font-weight: bold;
 	&__title {
 		margin-bottom: 30px;
-		font-size: 19px;
+		font-size: 22px;
+		font-weight: bold;
 	}
 	&__num {
 		float: right;
-		font-size: 19px;
+		font-size: 22px;
+		font-weight: bold;
 	}
 	p {
 		max-width: 300px;
-		font-size: 14px;
+		line-height: 1.2;
 	}
 	@media (max-width: 767px) {
 		margin-top: 20px;
