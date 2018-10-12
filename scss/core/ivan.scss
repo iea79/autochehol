@@ -820,3 +820,34 @@
 	  display: inline-block !important;
 	}
 }
+.order {
+	max-width: 900px;
+	margin-top: 52px;
+	margin-bottom: 100px;
+	font-weight: bold;
+	&__title {
+		margin-bottom: 30px;
+		font-size: 19px;
+	}
+	&__num {
+		float: right;
+		font-size: 19px;
+	}
+	p {
+		max-width: 300px;
+		font-size: 14px;
+	}
+	@media (max-width: 767px) {
+		margin-top: 20px;
+		&__num {
+			float: none;
+			margin-bottom: 50px;
+		}
+	}
+}
+.cart-container {
+	max-width: 1050px;
+}
+.title__cart {
+	margin-bottom: 100px;
+}
