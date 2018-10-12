@@ -68,6 +68,21 @@
 @import 'core/install';
 @import 'core/sales';
 @import 'core/individual';
+@import 'core/about';
+@import 'core/miniTitle';
+@import 'core/calc';
+@import 'core/map';
+@import 'core/catalogueColor';
+@import 'core/catalogueItem';
+@import 'core/catalogueForm';
+@import 'core/catalogueSale';
+@import 'core/catalogueImg';
+@import 'core/orderNum';
+@import 'core/more';
+@import 'core/backBtn';
+@import 'core/parameters';
+@import 'core/textCenter';
+@import 'core/mobileHideVisible';
 
 .is_descktop {
 	@media (max-width: 767px) {

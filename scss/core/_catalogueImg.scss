@@ -1,0 +1,10 @@
+.catalogueImg {
+	margin-bottom: 30px;
+	&__cell {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	img {
+		margin-right: 30px;
+	}
+}

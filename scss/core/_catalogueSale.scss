@@ -1,0 +1,41 @@
+.catalogueSale {
+	width: 100%;
+	min-height: 250px;
+	padding: 35px;
+	border: 4px solid #1d1d1d;
+	display: inline-block;
+	letter-spacing: 1.4px;
+	margin-bottom: 40px;
+	&_hot {
+		background-color: #ec3438;
+		border: none;
+		p {
+			color: #fff;
+		}
+	}
+	&__title {
+		margin-bottom: 30px;
+		font-size: 18px;
+		font-weight: 900;
+		&_hot {
+			color: #fff;
+		}
+	}
+	ul {
+		margin-bottom: 30px;
+		padding-left: 0;
+	}
+	li {
+		margin-bottom: 5px;
+		font-size: 14px;
+		list-style-type: none;
+	}
+	p {
+		margin-bottom: 30px;
+		font-size: 14px;
+		line-height: 22px;
+	}
+	span {
+		font-weight: 900;
+	}
+}
