@@ -1,0 +1,45 @@
+extends template.jade
+
+block variables
+	-var pageClass = "";
+
+block title
+	title Корзина
+
+block content
+	.container_center
+
+		a.backLink(href="shop.html") Смотреть каталог
+
+		.title.title__page.title__cart Корзина
+
+		.cart-container
+			.modal-body 
+				.addCart
+					.addCart__row
+						.addCart__item Накидки на сиденья из натуральной шерсти, белые
+						.addCart__item 4500 ₽
+						.addCart__item
+							.addCart__count.js_counter
+								i.plus
+								input(type="text" value="4" readonly) 
+								|шт
+								i.minus
+						.addCart__item 16000 ₽
+					.addCart__row
+						.addCart__item Накидки на сиденья из натуральной шерсти, бежевые с рыжевыми вставками
+						.addCart__item 4500 ₽
+						.addCart__item
+							.addCart__count.js_counter
+								i.plus
+								input(type="text" value="4" readonly) 
+								|шт
+								i.minus
+						.addCart__item 16000 ₽
+
+			.modal-footer
+				.addCart__action
+					.addCart__price 32000 ₽
+					.addCart__btn
+						button.btn.btn_next Продолжить покупки
+						button.btn.btn_warning оформить заказ
