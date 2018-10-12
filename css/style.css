@@ -1566,7 +1566,10 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       padding: 20px 30px 10px; }
     .modal-title {
       font-size: 24px;
-      text-align: center; } }
+      text-align: center; }
+    .modal-footer {
+      padding-left: 0;
+      padding-right: 0; } }
 
 .breadcrumb__link, .deliveryComp__link, .backLink, .alfabetList__link, .productTitle__back, .productDrop__link {
   color: #5d5d5d;
@@ -2916,18 +2919,21 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     font-size: 22px;
     font-weight: bold; }
   .order__num {
-    float: right;
     font-size: 22px;
-    font-weight: bold; }
+    font-weight: bold;
+    margin-bottom: 10px; }
   .order p {
     max-width: 300px;
     line-height: 1.2; }
   @media (max-width: 767px) {
     .order {
       margin-top: 20px; }
+      .order__title {
+        font-size: 16px;
+        margin-bottom: 25px; }
       .order__num {
         float: none;
-        margin-bottom: 50px; } }
+        font-size: 18px; } }
 
 .cart-container {
   max-width: 1050px; }
@@ -4336,6 +4342,8 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   vertical-align: middle; }
   .addCart__btn .btn {
     margin-left: 17px; }
+    .addCart__btn .btn + .btn {
+      margin-left: 20px; }
 
 .addCart__total {
   display: none; }

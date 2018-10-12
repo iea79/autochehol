@@ -830,9 +830,10 @@
 		font-weight: bold;
 	}
 	&__num {
-		float: right;
+		// float: right;
 		font-size: 22px;
 		font-weight: bold;
+		margin-bottom: 10px;
 	}
 	p {
 		max-width: 300px;
@@ -840,9 +841,14 @@
 	}
 	@media (max-width: 767px) {
 		margin-top: 20px;
+		&__title {
+			font-size: 16px;
+			margin-bottom: 25px;
+		}
 		&__num {
 			float: none;
-			margin-bottom: 50px;
+			font-size: 18px;
+			// margin-bottom: 50px;
 		}
 	}
 }

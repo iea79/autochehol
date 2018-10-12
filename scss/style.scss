@@ -754,6 +754,9 @@
 		vertical-align: middle;
 		.btn {
 			margin-left: 17px;
+			+ .btn {
+				margin-left: 20px;
+			}
 		}
 	}
 	&__total {
