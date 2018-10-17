@@ -1,0 +1,168 @@
+.addCart {
+	&__line {
+		@extend %clear_a;
+	}
+	&__row {
+		font-size: 18px;
+		letter-spacing: .1em;
+		margin-bottom: 21px;
+		// @include flex();
+		display: table;
+		width: 100%;
+		@extend %clear_a;
+	}
+	&__img {
+		display: none;
+		@media (max-width: 767px) {
+		}
+	}
+	&__item {
+		vertical-align: middle;
+		display: table-cell;
+		&:nth-child(n+2) {
+			padding-left: 23px;
+		}
+		&:first-child {
+			width: 58%;
+			
+		}
+	}
+	&__count {
+		input {
+			margin: 0;
+			border: none !important;
+			background-color: transparent !important;
+			width: auto;
+			display: inline-block;
+			vertical-align: baseline;
+			
+			appearance: none;
+			padding: 0;
+			width: 19px;
+			&:hover {
+				
+			}
+		}
+		.plus,.minus {
+			margin: 0 10px;
+		}
+	}
+	&__action {
+		text-align: right;
+		margin-bottom: 20px;
+	}
+	&__price {
+		font-size: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 20px;
+		letter-spacing: 0.05em;
+	}
+	&__btn {
+		display: inline-block;
+		vertical-align: middle;
+		.btn {
+			margin-left: 17px;
+			+ .btn {
+				margin-left: 20px;
+			}
+		}
+	}
+	&__total {
+		display: none;
+	}
+	@media (max-width: 1200px) {
+	    &__row {
+	    	font-size: 16px;
+	    }
+	    &__item {
+	    	white-space: nowrap;
+	    	
+	    	&:first-child {
+	    		width: 50%;
+	    		white-space: normal;
+	    		
+	    	}
+	    }
+	    &__price {
+	    	font-size: 24px;
+	    }
+	}
+	@media (max-width: 767px) {
+		&__line {
+			margin-bottom: 25px;
+		}
+	    &__row {
+	    	font-size: 12px;
+	    	margin-bottom: 10px;
+	    	display: block;
+	    	overflow: hidden;
+	    	width: auto;
+	    	
+	    	// text-align: center;
+	    	// border-bottom: 1px solid rgba(#000, .1);
+	    }
+	    &__img {
+		    display: block;
+		    float: left;
+		    margin-right: 30px;
+	    	width: 40%;
+	    }
+	    &__item {
+	    	white-space: nowrap;
+	    	width: auto;
+	    	display: block;
+	    	margin-bottom: 10px;
+	    	display: inline-block;
+	    	
+	    	// overflow: hidden;
+	    	
+	    	&:first-child {
+	    		width: auto;
+	    		white-space: normal;
+	    		
+	    	}
+	    	&:nth-child(n+2) {
+	    		padding-left: 0;
+	    	}
+	    	&:last-child {
+	    		display: none;
+	    		
+	    	}
+	    }
+	    &__action {
+	    	text-align: left;
+	    	
+	    }
+	    &__count {
+	    	.plus,.minus {
+	    		margin: 0 5px;
+	    	}
+	    }
+	    &__price {
+	    	font-size: 18px;
+	    	display: block;
+	    	margin-bottom: 8px;
+	    	margin-right: 0;
+	    	margin-bottom: 15px;
+	    }
+	    &__btn {
+	    	.btn {
+	    		font-size: 11px;
+	    		margin-left: 0;
+	    		margin-bottom: 8px;
+	    		margin-right: 5px;
+	    		+ .btn {
+	    			margin-left: 0;
+	    		}
+	    	}
+	    }
+		&__total {
+			display: inline-block;
+			margin-right: 10px;
+		}
+		.modal-footer {
+			padding-left: 0;
+		}
+	}
+}

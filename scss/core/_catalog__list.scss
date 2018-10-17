@@ -1,0 +1,38 @@
+.catalog__list {
+	padding-top: 5px;
+	@media (max-width: 767px) {
+	    
+		.product {
+			&__item {
+
+			}
+			&__img {
+				float: left;
+				width: 69%;
+				margin-bottom: 0;
+				margin-left: -10%;
+			}
+			&__text {
+				overflow: hidden;
+				margin-bottom: 18px;
+			}
+			&__action {
+				overflow: hidden;
+			}
+			&__price {
+				float: none;
+				width: auto;
+				margin-bottom: 18px;
+			}
+			&__btn {
+				float: none;
+				width: auto;
+				.btn {
+					background-color: #ea2126;
+				    border-color: #ea2126;
+				    color: #ffffff;
+				}
+			}
+		}
+	}
+}

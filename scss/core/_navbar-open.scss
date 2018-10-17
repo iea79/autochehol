@@ -1,0 +1,49 @@
+.navbar-open {
+	overflow: hidden;
+	.header {
+		position: fixed;
+		z-index: 51;
+		padding-top: 30px;
+		width: 100%;
+		box-shadow: none;
+		
+		&__left {
+			display: none;
+			
+		}
+		&_contrast {
+			.navbar {
+				&__toggle {
+					color: #1d1d1d;
+				}
+				&__link {
+					color: #1d1d1d;
+				}
+			}
+			.soc {
+				a {
+					color: #1d1d1d;
+				}
+				[class*="icon"] {
+					color: #1d1d1d;
+				}
+				.icon-whatsapp {
+					color: #4da735;
+				}
+			}
+			.phone {
+				color: #1d1d1d;
+			}
+			.logo {
+				// background-image: url('../img/logo_contrast.svg');
+			}
+			.cart {
+				color: #1d1d1d;
+				&__count {
+					// color: $main_color;
+					// background-color: #fff;
+				}
+			}
+		}
+	}
+}

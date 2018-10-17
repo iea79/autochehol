@@ -87,9 +87,12 @@
 			background-size: cover;
 			background-position: center;
 			background-repeat: no-repeat;
+			display: table-cell;
+			float: none;
 		}
-		&-list {
+		&-track {
 			// margin: auto;
+			display: table;
 		}
 		&-current {
 			
