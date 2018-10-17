@@ -1,0 +1,32 @@
+.order {
+	max-width: 900px;
+	margin-top: 52px;
+	margin-bottom: 100px;
+	&__title {
+		margin-bottom: 30px;
+		font-size: 22px;
+		font-weight: bold;
+	}
+	&__num {
+		// float: right;
+		font-size: 22px;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+	p {
+		max-width: 300px;
+		line-height: 1.2;
+	}
+	@media (max-width: 767px) {
+		margin-top: 20px;
+		&__title {
+			font-size: 16px;
+			margin-bottom: 25px;
+		}
+		&__num {
+			float: none;
+			font-size: 18px;
+			// margin-bottom: 50px;
+		}
+	}
+}

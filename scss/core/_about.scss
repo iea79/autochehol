@@ -1,0 +1,37 @@
+.aboutTop {
+	padding: 12% 0 9.5% 0;
+	margin-bottom: 9%;
+	background-image: url(../img/about-bg.jpg);
+	background-size: cover;
+	color: #fff;
+	@media (max-width: 767px) {
+		min-height: 380px;
+	  padding: 130px 0 10px 0;
+	  margin-bottom: 85px;
+	}
+	&__title {
+		margin-bottom: 39px;
+		font-size: 79px;
+		font-weight: 900;
+		@media (max-width: 991px) {
+		  font-size: 55px;
+		}
+		@media (max-width: 767px) {
+		  font-size: 40px;
+		  margin-bottom: 28px;
+		  line-height: 40px;
+		}
+	}
+	&__text {
+		max-width: 1137px;
+		font-size: 20px;
+		line-height: 35px;
+		@media (max-width: 991px) {
+		  font-size: 16px;
+		}
+		@media (max-width: 767px) {
+		  font-size: 12px;
+		  line-height: 18px;
+		}
+	}
+}

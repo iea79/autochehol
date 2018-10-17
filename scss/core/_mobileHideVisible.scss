@@ -1,0 +1,17 @@
+.mobileHide {
+	@media (max-width: 767px) {
+	  display: none !important;
+	}
+}
+.mobileVisible {
+	display: none !important;
+	@media (max-width: 767px) {
+	  display: block !important;
+	}
+}
+.mobileVisibleInline {
+	display: none !important;
+	@media (max-width: 767px) {
+	  display: inline-block !important;
+	}
+}

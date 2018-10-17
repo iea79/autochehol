@@ -1,0 +1,123 @@
+.map {
+	position: relative;
+	@media (max-width: 767px) {
+	  margin-bottom: 100px;
+	}
+	&:after {
+		content: '';
+		display: block;
+		padding-top: 39%;
+		@media (max-width: 767px) {
+		  display: none;
+		}
+	}
+	&__container {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@media (max-width: 767px) {
+		  position: static;
+		}
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+			width: 100%;
+		}
+	}
+	&__left {
+		float: left;
+		width: 25%;
+		height: 100%;
+		overflow-y: scroll;
+		@media (max-width: 767px) {
+		  width: 100%;
+		  height: 480px;
+		}
+	}
+	&__list {
+		padding-left: 0;
+		&.hide {
+			display: none;
+		}
+	}
+	&__item {
+		margin-bottom: 39px;
+		list-style-type: none;
+		letter-spacing: 1.6px;
+		cursor: pointer;
+		span {
+			display: block;
+			margin-bottom: 6px;
+		}
+	}
+	&__hideControl {
+		margin-top: 23px;
+		cursor: pointer;
+		span {
+			display: inline-block;
+			border-bottom: 1px solid transparent;
+			transition: .3s;
+			&:hover {
+				border-color: #1d1d1d;
+			}
+		}
+	}
+	&__hideText {
+		display: none;
+	}
+	&__right {
+		float: left;
+		width: 75%;
+		height: 100%;
+		@media (max-width: 767px) {
+		  width: 100%;
+		  height: 480px;
+		}
+	}
+}
+.yaMap {
+	width: 100%;
+	height: 100%;
+}
+.guarantList {
+	display: table;
+	padding-left: 0;
+	&__item {
+		display: table-cell;
+		vertical-align: top;
+		max-width: 290px;
+		padding: 10px 50px 10px 0;
+		list-style-type: none;
+		font-size: 16px;
+		font-weight: 900;
+		letter-spacing: 1.6px;
+		transition: .3s;
+		@media (max-width: 991px) {
+			display: inline-block;
+			width: 33%;
+		}
+		@media (max-width: 767px) {
+	    width: 100%;
+	    max-width: 1000px;
+	    margin-bottom: 20px;
+		}
+		a {
+			color: #ec3438;
+			text-decoration: none;
+			border-bottom: 1px solid transparent;
+			@media (max-width: 767px) {
+				display: inline-block;
+				padding-bottom: 10px;
+			  border-color: #bbb;
+			  color: #252525;
+			}
+			&:hover {
+				border-color: #bbb;
+				color: #ec3438;
+			}
+		}
+	}
+}

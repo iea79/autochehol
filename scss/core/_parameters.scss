@@ -1,0 +1,13 @@
+.parameters {
+	display: inline-block;
+	padding-bottom: 10px;
+	font-size: 14px;
+	color: #1d1d1d;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-bottom: 1px solid #bbb;
+	letter-spacing: 2.8px;
+	&:hover {
+		border-color: transparent;
+	}
+}

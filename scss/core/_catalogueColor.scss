@@ -1,0 +1,132 @@
+.catalogueColor {
+	&__body {
+		max-width: 500px;
+		margin-bottom: 30px;
+	}
+	&__item {
+		display: inline-block;
+		margin: 0 10px 10px 0;
+		@media (max-width: 767px) {
+		  margin-right: 0;
+		}
+	}
+	input {
+		display: none;
+		&:checked + label {
+			border-color: #ec3438;
+		}
+	}
+	&__label {
+		display: block;
+		width: 35px;
+		height: 35px;
+		border: 10px solid transparent;
+		box-sizing: content-box;
+		transition: .3s;
+		&:hover {
+			border-color: #bbb;
+		}
+		&:after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			background-size: contain;
+		}
+		&_0 {
+			&:after {
+				background-image: url(../img/color_select-0.jpg);
+			}
+		}
+		&_1 {
+			&:after {
+				background-image: url(../img/color_select-1.jpg);
+			}
+		}
+		&_2 {
+			&:after {
+				background-image: url(../img/color_select-2.jpg);
+			}
+		}
+		&_3 {
+			&:after {
+				background-image: url(../img/color_select-3.jpg);
+			}
+		}
+		&_4 {
+			&:after {
+				background-image: url(../img/color_select-4.jpg);
+			}
+		}
+		&_5 {
+			&:after {
+				background-image: url(../img/color_select-5.jpg);
+			}
+		}
+		&_6 {
+			&:after {
+				background-image: url(../img/color_select-6.jpg);
+			}
+		}
+		&_7 {
+			&:after {
+				background-image: url(../img/color_select-7.jpg);
+			}
+		}
+		&_8 {
+			&:after {
+				background-image: url(../img/color_select-8.jpg);
+			}
+		}
+		&_9 {
+			&:after {
+				background-image: url(../img/color_select-9.jpg);
+			}
+		}
+		&_10 {
+			&:after {
+				background-image: url(../img/color_select-10.jpg);
+			}
+		}
+		&_11 {
+			&:after {
+				background-image: url(../img/color_select-11.jpg);
+			}
+		}
+		&_12 {
+			&:after {
+				background-image: url(../img/color_select-12.jpg);
+			}
+		}
+		&_13 {
+			&:after {
+				background-image: url(../img/color_select-13.jpg);
+			}
+		}
+		&_14 {
+			&:after {
+				background-image: url(../img/color_select-14.jpg);
+			}
+		}
+		&_15 {
+			&:after {
+				background-image: url(../img/color_select-15.jpg);
+			}
+		}
+		&_16 {
+			&:after {
+				background-image: url(../img/color_select-16.jpg);
+			}
+		}
+		&_17 {
+			&:after {
+				background-image: url(../img/color_select-17.jpg);
+			}
+		}
+		&_18 {
+			&:after {
+				background-image: url(../img/color_select-18.jpg);
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.backBtn {
+	display: none;
+	padding: 20px 30px;
+	margin-bottom: 80px;
+	background-color: #ec3438;
+	font-size: 30px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	@media (max-width: 767px) {
+	  display: inline-block;
+	}
+	&:hover {
+		background-color: #FC4448;
+	}
+}
+.btn {
+	&_mb {
+		margin-bottom: 80px;
+	}
+}

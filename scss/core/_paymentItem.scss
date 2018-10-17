@@ -1,3 +1,28 @@
+.payment {
+	margin-bottom: 85px;
+	&__title {
+		margin-bottom: 95px;
+		font-size: 79px;
+		font-weight: 900;
+		line-height: 78.99px;
+		&_delivery {
+			margin-bottom: 50px;
+			@media (max-width: 767px) {
+			  margin-top: 71px;
+			}
+		}
+		@media (max-width: 767px) {
+		    font-size: 50px;
+		}
+	}
+	&__body {
+		max-width: 1200px;
+		padding-left: 30px;
+		@media (max-width: 767px) {
+		  text-align: center;
+		}
+	}
+}
 .paymentItem {
 	display: inline-block;
 	min-height: 130px;
