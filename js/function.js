@@ -171,12 +171,15 @@ function gridMatch() {
 
 function filterReplace() {
     var filtreItem = $('.productFilter__item_mob');
+    var filtreReset = $('.productFilter__item_reset');
     var filterWrap = $('.productFilter');
     var filterWrapMob = $('.mobileNav__filter');
     if (isXsWidth()) {
         filtreItem.appendTo(filterWrapMob);
+        filtreReset.appendTo(filterWrapMob);
     } else {
         filtreItem.prependTo(filterWrap);
+        filtreReset.appendTo(filterWrap);
     }
 }
 

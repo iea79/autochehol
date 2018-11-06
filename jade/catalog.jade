@@ -78,23 +78,37 @@ block content
 				.productDrop
 					.productDrop__list.productDrop__list_line
 						.productDrop__item
-							a.productDrop__link(href="#") 1981
+							.productDrop__check
+								input(type="checkbox" id="1981")
+								label(for="1981") 1981
 						.productDrop__item
-							a.productDrop__link(href="#") 1982
+							.productDrop__check
+								input(type="checkbox" id="1982")
+								label(for="1982") 1982
 						.productDrop__item
-							a.productDrop__link(href="#") 1983
+							.productDrop__check
+								input(type="checkbox" id="1983")
+								label(for="1983") 1983
 
-			.productFilter__item.productFilter__item_mob
-				.productFilter__drop
-					span Кузов
-				.productDrop
-					.productDrop__list.productDrop__list_line
-						.productDrop__item
-							a.productDrop__link(href="#") Седан
-						.productDrop__item
-							a.productDrop__link(href="#") Универсал
-						.productDrop__item
-							a.productDrop__link(href="#") Купе
+						button.btn.btn_contrast Применить
+
+			//- .productFilter__item.productFilter__item_mob
+			//- 	.productFilter__drop
+			//- 		span Кузов
+			//- 	.productDrop
+			//- 		.productDrop__list.productDrop__list_line
+			//- 			.productDrop__item
+			//- 				.productDrop__check
+			//- 					input(type="checkbox" id="Седан")
+			//- 					label(for="Седан") Седан
+			//- 			.productDrop__item
+			//- 				.productDrop__check
+			//- 					input(type="checkbox" id="Универсал")
+			//- 					label(for="Универсал") Универсал
+			//- 			.productDrop__item
+			//- 				.productDrop__check
+			//- 					input(type="checkbox" id="Купе")
+			//- 					label(for="Купе") Купе
 
 			.productFilter__item.productFilter__item_mob
 				.productFilter__drop
@@ -119,11 +133,18 @@ block content
 				.productDrop
 					.productDrop__list.productDrop__list_line
 						.productDrop__item
-							a.productDrop__link(href="#") Ткань
+							.productDrop__check
+								input(type="checkbox" id="")
+								label(for="") Ткань
 						.productDrop__item
-							a.productDrop__link(href="#") Кожа
+							.productDrop__check
+								input(type="checkbox" id="")
+								label(for="") Кожа
 						.productDrop__item
-							a.productDrop__link(href="#") Мех
+							.productDrop__check
+								input(type="checkbox" id="")
+								label(for="") Мех
+						button.btn.btn_contrast Применить
 
 			.productFilter__item.productFilter__item_mob
 				.productFilter__drop
@@ -141,17 +162,28 @@ block content
 				.productDrop
 					.productDrop__list.productDrop__list_line
 						.productDrop__item
-							a.productDrop__link(href="#") Популярные
+							.productDrop__check
+								input(type="checkbox" id="")
+								label(for="") Популярные
 						.productDrop__item
-							a.productDrop__link(href="#") Дешевле
+							.productDrop__check
+								input(type="checkbox" id="")
+								label(for="") Дешевле
 						.productDrop__item
-							a.productDrop__link(href="#") Дороже
+							.productDrop__check
+								input(type="checkbox" id="")
+								label(for="") Дороже
+						button.btn.btn_contrast Применить
 
 			.productFilter__item
 				.productFilter__check
 					input(type="checkbox" id="ch1") 
 					label(for="ch1")
 						|В наличии
+
+			.productFilter__item.productFilter__item_reset
+				.productFilter__reset
+					button.btn Сбросить
 
 		.catalog__list
 			- var plate = 9;

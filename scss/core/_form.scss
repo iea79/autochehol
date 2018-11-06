@@ -25,7 +25,64 @@
 	&__label {
 		
 	}
+	&_inline {
+		display: table;
+		width: 100%;
+		max-width: 600px;
+		.form {
+			&__row {
+				@media (min-width: 768px) {
+					display: table-row;
+				}
+			}
+			&__label {
+				font-size: 1em;
+				padding-bottom: .3em;
+				display: block;
+				@media (min-width: 768px) {
+					padding-bottom: 1em;
+					display: table-cell;
+					vertical-align: middle;
+					padding-right: 2em;
+					text-align: right;			    
+				}
+			}
+			&__field {
+				padding-bottom: 0em;
+				@media (min-width: 768px) {
+					padding-bottom: 1em;
+					display: table-cell;
+					width: 65%;
+					vertical-align: middle;
+				}
+				
+			}
+			&__action {
+
+			}
+			&__info {
+				margin-top: 2em;
+				font-size: 0.8em;
+				line-height: 1.5;
+				color: rgba(#000, 0.6);
+				@media (min-width: 768px) {
+					margin-top: 1em;
+
+				}
+			}
+			.btn {}
+			.btn_contrast {}
+		}
+		
+	}
+	&_order {
+		margin-bottom: 100px;
+		@media (max-width: 767px) {
+		    margin-bottom: 50px;
+		}
+	}
 }
+
 // Input text and textarea ================================================
 input:not([type]),
 input[type=text],
@@ -39,12 +96,12 @@ input[type=datetime],
 textarea {
 	background-color: $input_bg_color;
 	border: 1px solid $input_border_color;
-	padding: 6px 15px;
+	padding: 9px 15px;
 	outline: none;
 	font-size: 16px;
 	font-weight: 300;
 	font-family: $main_font_family;
-	border-radius: 5px;
+	border-radius: 0px;
 	transition: all .3s;
 	&:hover {
 		border: 1px solid $input_hover_border_color;
@@ -61,6 +118,9 @@ textarea {
 	// Placeholder for input +++++++++++++++
 	@include placeholder {
 		color: $input_placeholder_color;
+	}
+	@media (max-width: 767px) {
+	    padding: 6px 10px;
 	}
 }
 

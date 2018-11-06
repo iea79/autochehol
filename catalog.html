@@ -6,7 +6,7 @@
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link href="css/style.css?1.4" rel="stylesheet"/>
+    <link href="css/style.css?1.5" rel="stylesheet"/>
   </head>
   <body>
     <div class="wrapper">
@@ -207,19 +207,25 @@
               <div class="productFilter__drop"><span>Год от</span></div>
               <div class="productDrop">
                 <div class="productDrop__list productDrop__list_line">
-                  <div class="productDrop__item"><a class="productDrop__link" href="#">1981</a></div>
-                  <div class="productDrop__item"><a class="productDrop__link" href="#">1982</a></div>
-                  <div class="productDrop__item"><a class="productDrop__link" href="#">1983</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="productFilter__item productFilter__item_mob">
-              <div class="productFilter__drop"><span>Кузов</span></div>
-              <div class="productDrop">
-                <div class="productDrop__list productDrop__list_line">
-                  <div class="productDrop__item"><a class="productDrop__link" href="#">Седан</a></div>
-                  <div class="productDrop__item"><a class="productDrop__link" href="#">Универсал</a></div>
-                  <div class="productDrop__item"><a class="productDrop__link" href="#">Купе</a></div>
+                  <div class="productDrop__item">
+                    <div class="productDrop__check">
+                      <input type="checkbox" id="1981"/>
+                      <label for="1981">1981</label>
+                    </div>
+                  </div>
+                  <div class="productDrop__item">
+                    <div class="productDrop__check">
+                      <input type="checkbox" id="1982"/>
+                      <label for="1982">1982</label>
+                    </div>
+                  </div>
+                  <div class="productDrop__item">
+                    <div class="productDrop__check">
+                      <input type="checkbox" id="1983"/>
+                      <label for="1983">1983</label>
+                    </div>
+                  </div>
+                  <button class="btn btn_contrast">Применить</button>
                 </div>
               </div>
             </div>
@@ -270,9 +276,25 @@
               <div class="productFilter__drop"><span>Материал</span></div>
               <div class="productDrop">
                 <div class="productDrop__list productDrop__list_line">
-                  <div class="productDrop__item"><a class="productDrop__link" href="#">Ткань</a></div>
-                  <div class="productDrop__item"><a class="productDrop__link" href="#">Кожа</a></div>
-                  <div class="productDrop__item"><a class="productDrop__link" href="#">Мех</a></div>
+                  <div class="productDrop__item">
+                    <div class="productDrop__check">
+                      <input type="checkbox" id=""/>
+                      <label for="">Ткань</label>
+                    </div>
+                  </div>
+                  <div class="productDrop__item">
+                    <div class="productDrop__check">
+                      <input type="checkbox" id=""/>
+                      <label for="">Кожа</label>
+                    </div>
+                  </div>
+                  <div class="productDrop__item">
+                    <div class="productDrop__check">
+                      <input type="checkbox" id=""/>
+                      <label for="">Мех</label>
+                    </div>
+                  </div>
+                  <button class="btn btn_contrast">Применить</button>
                 </div>
               </div>
             </div>
@@ -291,9 +313,25 @@
               <div class="productFilter__drop"><span>Сортировка</span></div>
               <div class="productDrop">
                 <div class="productDrop__list productDrop__list_line">
-                  <div class="productDrop__item"><a class="productDrop__link" href="#">Популярные</a></div>
-                  <div class="productDrop__item"><a class="productDrop__link" href="#">Дешевле</a></div>
-                  <div class="productDrop__item"><a class="productDrop__link" href="#">Дороже</a></div>
+                  <div class="productDrop__item">
+                    <div class="productDrop__check">
+                      <input type="checkbox" id=""/>
+                      <label for="">Популярные</label>
+                    </div>
+                  </div>
+                  <div class="productDrop__item">
+                    <div class="productDrop__check">
+                      <input type="checkbox" id=""/>
+                      <label for="">Дешевле</label>
+                    </div>
+                  </div>
+                  <div class="productDrop__item">
+                    <div class="productDrop__check">
+                      <input type="checkbox" id=""/>
+                      <label for="">Дороже</label>
+                    </div>
+                  </div>
+                  <button class="btn btn_contrast">Применить</button>
                 </div>
               </div>
             </div>
@@ -301,6 +339,11 @@
               <div class="productFilter__check">
                 <input type="checkbox" id="ch1"/>
                 <label for="ch1">В наличии</label>
+              </div>
+            </div>
+            <div class="productFilter__item productFilter__item_reset">
+              <div class="productFilter__reset">
+                <button class="btn">Сбросить</button>
               </div>
             </div>
           </div>
@@ -710,6 +753,6 @@
     <script src="js/jquery-scrolltofixed-min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.matchHeight.js"></script>
-    <script src="js/function.js?1.4"></script>
+    <script src="js/function.js?1.5"></script>
   </body>
 </html>

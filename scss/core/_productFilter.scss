@@ -135,6 +135,14 @@
 		    padding: 13px 0 13px 16px;
 		}
 	}
+	&__reset {
+		.btn {
+			width: 100%;
+			@media (min-width: 992px) {
+			    padding: 16px;
+			}
+		}
+	}
 	&__btn {
 		display: none;
 	}
