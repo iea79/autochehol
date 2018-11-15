@@ -136,12 +136,47 @@
 		}
 	}
 	&__reset {
-		.btn {
-			width: 100%;
-			@media (min-width: 992px) {
-			    padding: 16px;
+		button {
+			display: block;
+			margin-left: auto;
+			padding: 22px 30px 22px 0;
+			color: #ccc;
+			background: none;
+			border: none;
+			font-size: 18px;
+			text-align: left;
+			position: relative;
+			cursor: pointer;
+			white-space: nowrap;
+			&:after {
+				content: '';
+				display: block;
+				width: 25px;
+				height: 1px;
+				background-color: #EC3438;
+				transform: rotate(45deg);
+				position: absolute;
+				top: 33px;
+				right: 0;
+			}
+			&:before {
+				content: '';
+				display: block;
+				width: 25px;
+				height: 1px;
+				background-color: #EC3438;
+				transform: rotate(-45deg);
+				position: absolute;
+				top: 33px;
+				right: 0;
 			}
 		}
+		// .btn {
+		// 	width: 100%;
+		// 	@media (min-width: 992px) {
+		// 	    padding: 16px;
+		// 	}
+		// }
 	}
 	&__btn {
 		display: none;

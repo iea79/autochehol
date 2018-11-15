@@ -41,7 +41,7 @@ block content
 			.productFilter__item.productFilter__item_mob
 				.productFilter__drop
 					span Модель
-				.productDrop.productDrop_full
+				.productDrop.productDrop_two
 					.productDrop__list
 						-var i1 = 3;
 						-for (var i = 0; i < i1; i++) {
@@ -58,7 +58,7 @@ block content
 			.productFilter__item.productFilter__item_mob
 				.productFilter__drop
 					span Поколение
-				.productDrop.productDrop_full
+				.productDrop.productDrop_two
 					.productDrop__list
 						-var i1 = 2;
 						-for (var i = 0; i < i1; i++) {
@@ -113,7 +113,7 @@ block content
 			.productFilter__item.productFilter__item_mob
 				.productFilter__drop
 					span Производитель
-				.productDrop.productDrop_full
+				.productDrop.productDrop_two.productDrop_right
 					.productDrop__list
 						-var i1 = 6;
 						-for (var i = 0; i < i1; i++) {
@@ -130,8 +130,8 @@ block content
 			.productFilter__item.productFilter__item_mob
 				.productFilter__drop
 					span Материал
-				.productDrop
-					.productDrop__list.productDrop__list_line
+				.productDrop.productDrop_three
+					.productDrop__list
 						.productDrop__item
 							.productDrop__check
 								input(type="checkbox" id="")
@@ -144,17 +144,73 @@ block content
 							.productDrop__check
 								input(type="checkbox" id="")
 								label(for="") Мех
-						button.btn.btn_contrast Применить
+						.productDrop__item
+							.productDrop__check
+								input(type="checkbox" id="")
+								label(for="") Кожзам
+					button.btn.btn_contrast Применить
 
 			.productFilter__item.productFilter__item_mob
 				.productFilter__drop
 					span Цвет
-				.productDrop
+				.productDrop.productDrop_color
 					.productDrop__list
 						.productDrop__item
-							.productDrop__img
-								img(src="img/marka1.png", alt="")
-							.productDrop__link 
+							.productDrop__check
+								input(type="checkbox" id="productDrop_color1")
+								label(for="productDrop_color1")
+								label(for="productDrop_color1") Бежевый
+						.productDrop__item
+							.productDrop__check
+								input(type="checkbox" id="productDrop_color2")
+								label(for="productDrop_color2")
+								label(for="productDrop_color2") Камуфляж
+						.productDrop__item
+							.productDrop__check
+								input(type="checkbox" id="productDrop_color3")
+								label(for="productDrop_color3")
+								label(for="productDrop_color3") Серый
+						.productDrop__item
+							.productDrop__check
+								input(type="checkbox" id="productDrop_color4")
+								label(for="productDrop_color4")
+								label(for="productDrop_color4") Белый
+						.productDrop__item
+							.productDrop__check
+								input(type="checkbox" id="productDrop_color5")
+								label(for="productDrop_color5")
+								label(for="productDrop_color5") Коричневый
+						.productDrop__item
+							.productDrop__check
+								input(type="checkbox" id="productDrop_color6")
+								label(for="productDrop_color6")
+								label(for="productDrop_color6") Синий
+						.productDrop__item
+							.productDrop__check
+								input(type="checkbox" id="productDrop_color7")
+								label(for="productDrop_color7")
+								label(for="productDrop_color7") Желтый
+						.productDrop__item
+							.productDrop__check
+								input(type="checkbox" id="productDrop_color8")
+								label(for="productDrop_color8")
+								label(for="productDrop_color8") Красный
+						.productDrop__item
+							.productDrop__check
+								input(type="checkbox" id="productDrop_color9")
+								label(for="productDrop_color9")
+								label(for="productDrop_color9") Черный
+						.productDrop__item
+							.productDrop__check
+								input(type="checkbox" id="productDrop_color10")
+								label(for="productDrop_color10")
+								label(for="productDrop_color10") Зеленый
+						.productDrop__item
+							.productDrop__check
+								input(type="checkbox" id="productDrop_color11")
+								label(for="productDrop_color11")
+								label(for="productDrop_color11") Оранжевый
+					button.btn.btn_contrast Применить
 
 			.productFilter__item
 				.productFilter__drop
@@ -183,7 +239,7 @@ block content
 
 			.productFilter__item.productFilter__item_reset
 				.productFilter__reset
-					button.btn Сбросить
+					button Очистить фильтр
 
 		.catalog__list
 			- var plate = 9;
