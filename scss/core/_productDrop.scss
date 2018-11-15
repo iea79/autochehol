@@ -18,8 +18,8 @@
 	// 	left: 0;
 	// }
 	@media (min-width: 768px) {
-	    padding-top: 10px;
-	    padding-bottom: 10px;
+	    padding: 10px;
+
 	}
 	@media (max-width: 991px) {
 	    min-width: 23%;
@@ -33,18 +33,10 @@
 		right: 0;
 	}
 	&_two {
-		max-width: 500px;
 		.productDrop__item {
-			width: 50%;
+			width: 25%;
 		}
 
-	}
-	&_right {
-		right: 0;
-		@media (max-width: 991px) {
-			right: auto;
-			left: 14px;
-		}
 	}
 	&.open {
 		display: block;
@@ -59,8 +51,6 @@
 			max-width: 200px;
 			margin-left: auto;
 			margin-top: 30px;
-			margin-right: 10px;
-			margin-bottom: 0 !important;
 		}
 	}
 	&_color {
@@ -79,8 +69,8 @@
 		label {
 			float: left;
 			&:nth-child(2) {
-				width: 30px;
-				height: 30px;
+				width: 24px;
+				height: 24px;
 				border: 1px solid #ccc;
 				border-radius: 50%;
 			}
@@ -93,9 +83,7 @@
 			display: block;
 			max-width: 200px;
 			margin-left: auto;
-			margin-right: 10px;
 			margin-top: 30px;
-			margin-bottom: 0 !important;
 		}
 		.productDrop__item {
 			width: 33%;
@@ -190,7 +178,7 @@
 				float: none;
 			}
 			label {
-				display: inline-block;
+				display: inline-block !important;
 				float: none;
 				width: 100%;
 				&:nth-child(3) {
@@ -223,10 +211,18 @@
 		padding: 17px 24px 20px;
 		text-decoration: none;
 		vertical-align: top;
+		ul {
+			list-style: none;
+			padding-left: 0;
+			color: #5d5d5d;
+		}
+		li {
+			margin-bottom: 5px;
+			font-size: 1em;
+		}
 	}
 	.btn {
 		width: 100%;
-		margin-bottom: -10px;
 	}
 	&__img {
 		margin-bottom: 10px;
