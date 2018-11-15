@@ -213,6 +213,10 @@
 		padding: 17px 24px 20px;
 		text-decoration: none;
 		vertical-align: top;
+		@media (min-width: 768px) {	    
+			display: flex !important;
+			align-items: center;
+		}
 		ul {
 			list-style: none;
 			padding-left: 0;
@@ -227,14 +231,17 @@
 		width: 100%;
 	}
 	&__img {
-		float: left;
-		width: 50%;
-		vertical-align: top;
+		// float: left;
 		margin-bottom: 10px;
+		@media (min-width: 768px) {
+			width: 50%;
+		}
 	}
 	&__description {
-		float: left;
-		width: 50%;
+		// float: left;
+		@media (min-width: 768px) {
+			width: 50%;
+		}
 	}
 	&__link {
 		@extend %link;
