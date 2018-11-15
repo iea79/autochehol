@@ -34,9 +34,11 @@
 	}
 	&_two {
 		.productDrop__item {
-			width: 25%;
+			width: 50%;
+			@media (max-width: 767px) {
+				width: 100%;
+			}
 		}
-
 	}
 	&.open {
 		display: block;
@@ -225,7 +227,14 @@
 		width: 100%;
 	}
 	&__img {
+		float: left;
+		width: 50%;
+		vertical-align: top;
 		margin-bottom: 10px;
+	}
+	&__description {
+		float: left;
+		width: 50%;
 	}
 	&__link {
 		@extend %link;
