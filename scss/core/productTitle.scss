@@ -48,6 +48,13 @@
 
 		}
 	}
+	&__sub {
+		max-width: 600px;
+		margin-top: -24px;
+		font-size: 14px;		
+		font-weight: normal;
+		color: #919191;
+	}
 	@media (max-width: 991px) {
 		padding: 0;
 	    &__logo {
@@ -63,6 +70,9 @@
 	    }
 	    &__name {
 	    	font-size: 30px;
+	    }
+	    &__sub {
+	    	margin-top: -10px;
 	    }
 	}
 	@media (max-width: 767px) {
