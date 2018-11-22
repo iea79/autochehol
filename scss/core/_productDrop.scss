@@ -208,6 +208,13 @@
 			}
 		}
 	}
+	&_inline {
+		.productDrop__description {
+			@media (min-width: 768px) {
+				width: 50%;
+			}
+		}
+	}
 	&__list {
 		// margin-left: -30px;
 		&:not(.productDrop__list_line) {
@@ -234,6 +241,8 @@
 		vertical-align: top;
 		@media (min-width: 768px) {	    
 			display: flex !important;
+			flex-flow: row wrap;
+			justify-content: center;
 			align-items: center;
 		}
 		ul {
@@ -258,12 +267,10 @@
 	}
 	&__description {
 		// float: left;
-		@media (min-width: 768px) {
-			width: 50%;
-		}
 	}
 	&__link {
 		@extend %link;
+		width: 100%;
 		&:hover {
 			color: #ec3438;
 			border-bottom-color: transparent;

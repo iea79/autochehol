@@ -4127,6 +4127,9 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     @media (max-width: 767px) {
       .productDrop_five .productDrop__item {
         width: 50%; } }
+  @media (min-width: 768px) {
+    .productDrop_inline .productDrop__description {
+      width: 50%; } }
   .productDrop__list:not(.productDrop__list_line) {
     text-align: center; }
     html[data-browser*="flexible"] .productDrop__list:not(.productDrop__list_line) {
@@ -4166,6 +4169,15 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
         display: -webkit-flex !important;
         display: -ms-flexbox !important;
         display: flex !important;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
         -webkit-box-align: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
@@ -4184,12 +4196,11 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     @media (min-width: 768px) {
       .productDrop__img {
         width: 50%; } }
-  @media (min-width: 768px) {
-    .productDrop__description {
-      width: 50%; } }
-  .productDrop__link:hover {
-    color: #ec3438;
-    border-bottom-color: transparent; }
+  .productDrop__link {
+    width: 100%; }
+    .productDrop__link:hover {
+      color: #ec3438;
+      border-bottom-color: transparent; }
   .productDrop__check input[type=checkbox], .productDrop__check input[type=radio] {
     float: left;
     margin-right: 9px;
