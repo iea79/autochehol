@@ -1312,14 +1312,13 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
           font-size: 24px; } }
   @media (max-width: 767px) {
     .navbar__toggle {
-      width: 22px;
-      height: 11px;
+      width: 24px;
+      height: 23px;
       display: inline-block;
       float: left;
       margin-top: 7px;
       margin-right: 15px;
       border-top: 1px solid;
-      border-bottom: 1px solid;
       position: relative;
       cursor: pointer; }
       .navbar__toggle:before, .navbar__toggle:after {
@@ -1329,9 +1328,15 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
         width: 100%;
         border-top: 1px solid;
         top: 4px; }
+      .navbar__toggle:after {
+        content: '';
+        top: 9px; }
       .navbar__toggle.open {
         border-color: transparent;
-        color: #ec3438; }
+        color: #ec3438;
+        margin-top: 0; }
+        .navbar__toggle.open:before, .navbar__toggle.open:after {
+          top: 11px; }
         .navbar__toggle.open:before {
           -webkit-transform: rotate(45deg);
           -ms-transform: rotate(45deg);
