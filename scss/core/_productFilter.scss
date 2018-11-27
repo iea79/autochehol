@@ -215,13 +215,15 @@
 	    	left: 0;
 	    	bottom: 20px;
 	    	width: 100%;
-	    	text-align: center;
+	    	padding-left: 25px;
+	    	text-align: left;
+	    	// text-align: center;
 	    	.btn {
 	    		padding: 12px 30px;
 	    		font-size: 12px;
 					max-width: 230px;
-					margin: auto;
-					display: block;
+					// margin: auto;
+					// display: block;
 					margin-bottom: 0;
 	    		&:after {
 	    			content: '';

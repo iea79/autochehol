@@ -1618,8 +1618,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     .modal-content {
       padding: 20px 30px 10px; }
     .modal-title {
-      font-size: 24px;
-      text-align: center; }
+      font-size: 24px; }
     .modal-footer {
       padding-left: 0;
       padding-right: 0; } }
@@ -3996,13 +3995,12 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
         left: 0;
         bottom: 20px;
         width: 100%;
-        text-align: center; }
+        padding-left: 25px;
+        text-align: left; }
         .productFilter__btn .btn {
           padding: 12px 30px;
           font-size: 12px;
           max-width: 230px;
-          margin: auto;
-          display: block;
           margin-bottom: 0; }
           .productFilter__btn .btn:after {
             content: '';
@@ -4111,7 +4109,16 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
           float: none;
           width: 100%; }
           .productDrop_color label:nth-child(3) {
-            margin-left: 0; } }
+            margin-left: 0; }
+        .productDrop_color .productDrop__check {
+          position: relative; }
+          .productDrop_color .productDrop__check input + label {
+            position: absolute;
+            left: 0;
+            top: 0;
+            padding-left: 0; }
+          .productDrop_color .productDrop__check label:last-child {
+            padding-left: 33px; } }
   .productDrop_right {
     right: 0;
     left: auto; }
@@ -4218,15 +4225,28 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
         background: none; }
     @media (max-width: 767px) {
       .productDrop__check input[type=checkbox], .productDrop__check input[type=radio] {
-        width: 1.1em;
-        height: 1.1em;
-        border-radius: 0.1em; }
+        width: 1.3em;
+        height: 1.3em;
+        border-radius: 50%;
+        text-align: center; }
         .productDrop__check input[type=checkbox]:checked:before, .productDrop__check input[type=radio]:checked:before {
-          font-size: 1.3em; } }
+          line-height: 0.5; } }
+  @media (max-width: 767px) {
+    .productDrop__check input[type=radio] {
+      border-radius: 50%;
+      text-align: center; }
+      .productDrop__check input[type=radio]:checked {
+        text-align: center; }
+        .productDrop__check input[type=radio]:checked:before {
+          content: ""; } }
   .productDrop__check label {
     display: block;
     overflow: hidden;
     cursor: pointer; }
+    @media (max-width: 767px) {
+      .productDrop__check label {
+        text-align: left;
+        font-size: 1.2em; } }
   .productDrop__check input[type=radio] {
     position: relative; }
     .productDrop__check input[type=radio]:checked:before {
@@ -4239,7 +4259,9 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       padding: 10px 17px 15px; }
     .productDrop .btn {
       font-size: 12px;
-      width: 50%;
+      padding-left: 10px;
+      padding-right: 10px;
+      max-width: 124px;
       margin: 10px; } }
 
 .mobileNav__filter, .mobileNav__list, .mobileNav__foot {
@@ -4546,3 +4568,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
 @media (min-width: 768px) {
   .is_mobile {
     display: none; } }
+
+.b24-widget-button-position-bottom-right {
+  right: 13px !important;
+  bottom: 13px !important; }
