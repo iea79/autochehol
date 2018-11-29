@@ -2482,7 +2482,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
   .shopItem__detail {
     list-style: none;
     padding: 0;
-    margin: 0 0 30px; }
+    margin: 0 0 60px; }
     .shopItem__detailItem {
       margin-bottom: 9px;
       letter-spacing: 0.1em; }
@@ -3551,7 +3551,7 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
     background-image: url(../img/color_select-18.jpg); }
 
 .catalogueItem {
-  max-width: 1025px;
+  max-width: 1325px;
   padding-left: 100px; }
   @media (max-width: 767px) {
     .catalogueItem {
@@ -3565,13 +3565,15 @@ input[type=checkbox]:disabled:checked:before, input[type=checkbox]:disabled:inde
       width: 100%; }
   .catalogueItem__left {
     float: left;
-    width: 60%; }
+    width: 70%;
+    padding-right: 60px; }
     @media (max-width: 767px) {
       .catalogueItem__left {
+        padding-right: 0;
         width: 100%; } }
   .catalogueItem__right {
     float: left;
-    width: 40%; }
+    width: 30%; }
     @media (max-width: 767px) {
       .catalogueItem__right {
         display: none; } }

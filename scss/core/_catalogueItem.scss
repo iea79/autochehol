@@ -1,5 +1,5 @@
 .catalogueItem {
-	max-width: 1025px;
+	max-width: 1325px;
 	padding-left: 100px;
 	@media (max-width: 767px) {
 	  padding-left: 0;
@@ -15,14 +15,16 @@
 	}
 	&__left {
 		float: left;
-		width: 60%;
+		width: 70%;
+		padding-right: 60px;
 		@media (max-width: 767px) {
-		  width: 100%;
+			padding-right: 0;
+		  	width: 100%;
 		}
 	}
 	&__right {
 		float: left;
-		width: 40%;
+		width: 30%;
 			@media (max-width: 767px) {
 			  display: none;
 			}
