@@ -1,0 +1,23 @@
+extends template.jade
+
+block variables
+	-var pageClass = "";
+	-var headerContrast = false;
+
+block title
+	title Меню
+
+block content
+	.indexMenu
+		a(href="home.html").indexMenu_link.btn Главная
+		a(href="about.html").indexMenu_link.btn Внутренняя
+		a(href="catalog.html").indexMenu_link.btn Каталог
+		a(href="catalogue-item.html").indexMenu_link.btn Карточка товара
+		a(href="install.html").indexMenu_link.btn Установка
+		a(href="cart.html").indexMenu_link.btn Корзина
+		a(href="guarantees.html").indexMenu_link.btn Гарантии
+		a(href="order.html").indexMenu_link.btn Заказ
+		a(href="delivery.html").indexMenu_link.btn Доставка
+		a(href="billing.html").indexMenu_link.btn Оплата
+		a(href="payment.html").indexMenu_link.btn Оплата форма
+		a(href="geografy.html").indexMenu_link.btn География
